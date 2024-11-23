@@ -1,0 +1,407 @@
+/* 可変レイアウト
+------------------------------------------ */
+html {
+	font-size: calc(10 * 100vw / 375);
+}
+
+@media (min-width:768px) {
+	html {
+		font-size: calc(10 * 100vw / 1200);
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 62.5%;
+	}
+}
+
+/* ベースのスタイル
+------------------------------------------ */
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	line-height: 1.75;
+	color: #333;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a,
+a:hover,
+a i {
+	transition: all 0.3s;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+ul {
+	list-style: none;
+}
+
+/* ヘッダー
+------------------------------------------ */
+.header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	box-shadow: 0 0 0.075rem 0 #000;
+}
+
+/* ロゴ */
+.header_logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	line-height: 0;
+	margin-left: 1.7rem;
+	margin-top: 1.6rem;
+	margin-bottom: 1.6rem;
+}
+
+/* ハンバーガーボタン */
+.hamburger_button {
+	width: 7rem;
+	height: 7rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: .7rem;
+	background-color: #005BAC
+}
+
+.hamburger_button_bar {
+	width: 3rem;
+	height: .4rem;
+	background-color: #fff;
+}
+
+@media (min-width: 768px) {
+	.hamburger_button {
+		display: none;
+	}
+}
+
+/* ハンバーガーメニュー
+------------------------------------------ */
+
+
+@media (min-width: 768px) {
+	.hamburger_menu {
+		background-color: #005BAC;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 767.9px) {
+	.hamburger_menu {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		top: 7rem;
+		background-color: #005BAC;
+		transition: all 0.6s;
+		opacity: 0;
+		left: 0rem;
+		right: 0rem;
+		visibility: hidden;
+		align-items: center;
+	}
+}
+
+.hamburger_menu_list_group>li>a {
+	color: #fff;
+}
+
+.hamburger_menu_list_group_text {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 0.1rem solid #7FADD5;
+}
+
+/* 開いている状態 */
+.hamburger_menu_active {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+
+/* カバー
+------------------------------------------ */
+.cover {
+	margin-top: 7rem;
+	position: relative;
+	margin-bottom: 2.4rem;
+}
+
+.cover>picture>img {
+	width: 100%;
+}
+
+.cover_container {
+	display: flex;
+	flex-direction: row;
+	row-gap: 0.4375rem;
+	position: absolute;
+	bottom: 59.1%;
+	left: 4.3%;
+}
+
+.cover_container>img {
+	width: 2.4rem;
+	height: auto;
+}
+
+.cover_text_01 {
+	font-family: "Noto Sans JP", serif;
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+.cover_text_02 {
+	font-family: "Poppins", serif;
+	font-weight: 800;
+	font-style: italic;
+	font-size: 2.5rem;
+	color: #F11F8D;
+	text-align: center;
+	line-height: 1;
+}
+
+.cover_text_03 {
+	font-family: "Poppins", serif;
+	font-weight: 800;
+	font-style: italic;
+	font-size: 3.6rem;
+	color: #F11F8D;
+	text-align: center;
+}
+
+.cover_text_04 {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 400;
+	font-size: 1.4rem;
+	color: #333;
+	margin-bottom: .3rem;
+}
+
+.cover_text_05 {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 900;
+	font-size: 2.5rem;
+	color: #005BAC;
+	line-height: 1;
+	margin-bottom: 1.2rem;
+}
+
+.cover_text_06 {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 900;
+	font-size: 2.5rem;
+	color: #005BAC;
+	line-height: 1;
+}
+
+.cover_wrapper_01 {
+	position: absolute;
+	bottom: 16%;
+	left: 4.3%
+}
+
+
+/* ボタン
+------------------------------------------ */
+.button_77CB33 {
+	display: block;
+	border-radius: 2.4rem;
+	width: 24.9rem;
+	height: 4.8rem;
+	background-color: #77CB33;
+	text-align: center;
+	position: relative;
+	padding-top: 1rem;
+	font-size: 1.6rem;
+	color: #fff;
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.2rem;
+}
+
+.button_F6AA00 {
+	display: block;
+	border-radius: 2.4rem;
+	width: 24.9rem;
+	height: 4.8rem;
+	background-color: #F6AA00;
+	text-align: center;
+	position: relative;
+	padding-top: 1rem;
+	font-size: 1.6rem;
+	color: #fff;
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.2rem;
+}
+
+.button_3AC8AD {
+	display: block;
+	border-radius: 2.4rem;
+	width: 24.9rem;
+	height: 4.8rem;
+	background-color: #3AC8AD;
+	text-align: center;
+	position: relative;
+	padding-top: 1rem;
+	font-size: 1.6rem;
+	color: #fff;
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*選ばれる３つの理由
+------------------------------------------ */
+.reason_container {
+	padding-right: 1.6rem;
+	padding-left: 1.6rem;
+}
+
+.reason_row_01 {
+	margin-bottom: 3.4rem;
+}
+
+.reason_row_02 {
+	margin-bottom: 3.4rem;
+}
+
+.reason_row_03 {
+	margin-bottom: 3.4rem;
+}
+
+
+.reason_title_01 {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	font-size: 2.8rem;
+	color: #333;
+	text-align: center;
+	margin-top: 2.9rem;
+	padding-bottom: 1.9rem;
+}
+
+.reason_title_02 {
+	font-family: "Poppins", serif;
+	font-weight: 700;
+	font-size: 4rem;
+	color: #F11F8D;
+	line-height: 1;
+}
+
+.reason_point {
+	font-family: "Poppins", serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 2.4rem;
+	color: #F11F8D;
+	line-height: 1;
+	margin-top: 1.6rem;
+	margin-bottom: 0.4rem;
+}
+
+.reason_space {
+	font-family: "Poppins", serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 3.2rem;
+	color: #F11F8D;
+}
+
+.reason_number {
+	font-family: "Poppins", serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 3.6rem;
+	color: #F11F8D;
+}
+
+.reason_paragraph_01 {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	font-size: 2rem;
+	color: #333;
+	margin-bottom: 0.6rem;
+
+}
+
+.reason_paragraph_02 {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	font-size: 2rem;
+	color: #333;
+	line-height: 1.4;
+    margin-top: .8rem;
+    margin-bottom: 1.1rem
+}
+
+
+.reason_paragraph_03 {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	font-size: 2rem;
+	color: #333;
+	line-height: 1.4;
+    margin-top: .8rem;
+    margin-bottom: 1.1rem
+}
+
+
+.reason_text_01 {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #333;
+}
+
+.reason_text_02 {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #333;
+}
+
+.reason_text_03 {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #333;
+}
+
+.reason_row_01>picture {
+	border-radius: 0.1rem;
+}
