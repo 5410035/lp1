@@ -61,7 +61,7 @@ ul {
 }
 
 /* ロゴ */
-.header_logo {
+.header__logo {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -73,7 +73,7 @@ ul {
 }
 
 /* ハンバーガーボタン */
-.hamburger_button {
+.hamburger__button {
 	width: 7rem;
 	height: 7rem;
 	display: flex;
@@ -84,16 +84,17 @@ ul {
 	background-color: #005BAC
 }
 
-.hamburger_button_bar {
+@media (min-width: 768px) {
+	.hamburger__button {
+		display: none;
+	}
+}
+
+
+.hamburger__button-bar {
 	width: 3rem;
 	height: .4rem;
 	background-color: #fff;
-}
-
-@media (min-width: 768px) {
-	.hamburger_button {
-		display: none;
-	}
 }
 
 /* ハンバーガーメニュー
@@ -101,7 +102,7 @@ ul {
 
 
 @media (min-width: 768px) {
-	.hamburger_menu {
+	.hamburger-menu {
 		background-color: #005BAC;
 		display: flex;
 		flex-direction: column;
@@ -111,7 +112,7 @@ ul {
 }
 
 @media (max-width: 767.9px) {
-	.hamburger_menu {
+	.hamburger-menu {
 		position: fixed;
 		display: flex;
 		flex-direction: column;
@@ -126,18 +127,18 @@ ul {
 	}
 }
 
-.hamburger_menu_list_group>li>a {
+.hamburger-menu__list-group>li>a {
 	color: #fff;
 }
 
-.hamburger_menu_list_group_text {
+.hamburger-menu__list-group--text {
 	display: flex;
 	flex-direction: row;
 	border-bottom: 0.1rem solid #7FADD5;
 }
 
 /* 開いている状態 */
-.hamburger_menu_active {
+.hamburger-menu_active {
 	opacity: 1;
 	visibility: visible;
 }
@@ -156,7 +157,7 @@ ul {
 	width: 100%;
 }
 
-.cover_container {
+.cover__container {
 	display: flex;
 	flex-direction: row;
 	row-gap: 0.4375rem;
@@ -165,12 +166,12 @@ ul {
 	left: 4.3%;
 }
 
-.cover_container>img {
+.cover__container>img {
 	width: 2.4rem;
 	height: auto;
 }
 
-.cover_text_01 {
+.cover__text-01 {
 	font-family: "Noto Sans JP", serif;
 	font-size: 1.1rem;
 	font-weight: 400;
@@ -178,7 +179,7 @@ ul {
 	margin-bottom: 0.5rem;
 }
 
-.cover_text_02 {
+.cover__text-02 {
 	font-family: "Poppins", serif;
 	font-weight: 800;
 	font-style: italic;
@@ -188,7 +189,7 @@ ul {
 	line-height: 1;
 }
 
-.cover_text_03 {
+.cover__text-03 {
 	font-family: "Poppins", serif;
 	font-weight: 800;
 	font-style: italic;
@@ -197,7 +198,7 @@ ul {
 	text-align: center;
 }
 
-.cover_text_04 {
+.cover__text-04 {
 	font-family: "Noto Sans JP", serif;
 	font-weight: 400;
 	font-size: 1.4rem;
@@ -205,7 +206,7 @@ ul {
 	margin-bottom: .3rem;
 }
 
-.cover_text_05 {
+.cover__text-05 {
 	font-family: "Noto Sans JP", serif;
 	font-weight: 900;
 	font-size: 2.5rem;
@@ -214,7 +215,7 @@ ul {
 	margin-bottom: 1.2rem;
 }
 
-.cover_text_06 {
+.cover__text-06 {
 	font-family: "Noto Sans JP", serif;
 	font-weight: 900;
 	font-size: 2.5rem;
@@ -222,7 +223,7 @@ ul {
 	line-height: 1;
 }
 
-.cover_wrapper_01 {
+.cover__wrapper-01 {
 	position: absolute;
 	bottom: 16%;
 	left: 4.3%
@@ -231,7 +232,7 @@ ul {
 
 /* ボタン
 ------------------------------------------ */
-.button_77CB33 {
+.button-77CB33 {
 	display: block;
 	border-radius: 2.4rem;
 	width: 24.9rem;
@@ -249,7 +250,7 @@ ul {
 	margin-bottom: 1.2rem;
 }
 
-.button_F6AA00 {
+.button-F6AA00 {
 	display: block;
 	border-radius: 2.4rem;
 	width: 24.9rem;
@@ -267,7 +268,7 @@ ul {
 	margin-bottom: 1.2rem;
 }
 
-.button_3AC8AD {
+.button-3AC8AD {
 	display: block;
 	border-radius: 2.4rem;
 	width: 24.9rem;
@@ -284,28 +285,62 @@ ul {
 	margin-right: auto;
 }
 
+/*入学説明会に申し込むボタン*/
+.apply__button {
+	background-color: #FFEDED;
+	padding-right: 3.6rem;
+	padding-left: 3.6rem;
+	padding-top: 3.8rem;
+	padding-bottom: 2.8rem;
+}
+
+.apply__text {
+	text-align: center;
+	font-size: 1.6rem;
+	color: #333;
+	font-family: "Noto Sans JP", serif;
+	font-weight: 400;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.1rem;
+}
+
+.apply__button-text {
+	display: block;
+	border-radius: 3rem;
+	width: 30.4rem;
+	height: 6.7rem;
+	background: linear-gradient(to right, #0573E1, #53A2F0);
+	text-align: center;
+	position: relative;
+	padding-top: 1.6rem;
+	font-size: 2rem;
+	color: #fff;
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.2rem;
+}
 
 /*選ばれる３つの理由
 ------------------------------------------ */
-.reason_container {
+.reason__container {
 	padding-right: 1.6rem;
 	padding-left: 1.6rem;
-}
-
-.reason_row_01 {
 	margin-bottom: 3.4rem;
 }
 
-.reason_row_02 {
+.reason__row-01 {
 	margin-bottom: 3.4rem;
 }
 
-.reason_row_03 {
+.reason__row-02 {
 	margin-bottom: 3.4rem;
 }
 
 
-.reason_title_01 {
+.reason__title-01 {
 	font-family: "Noto Sans JP", serif;
 	font-weight: 700;
 	font-size: 2.8rem;
@@ -315,7 +350,7 @@ ul {
 	padding-bottom: 1.9rem;
 }
 
-.reason_title_02 {
+.reason__title-02 {
 	font-family: "Poppins", serif;
 	font-weight: 700;
 	font-size: 4rem;
@@ -323,7 +358,7 @@ ul {
 	line-height: 1;
 }
 
-.reason_point {
+.reason__point {
 	font-family: "Poppins", serif;
 	font-weight: 900;
 	font-style: italic;
@@ -334,7 +369,7 @@ ul {
 	margin-bottom: 0.4rem;
 }
 
-.reason_space {
+.reason__space {
 	font-family: "Poppins", serif;
 	font-weight: 900;
 	font-style: italic;
@@ -342,7 +377,7 @@ ul {
 	color: #F11F8D;
 }
 
-.reason_number {
+.reason__number {
 	font-family: "Poppins", serif;
 	font-weight: 900;
 	font-style: italic;
@@ -350,7 +385,7 @@ ul {
 	color: #F11F8D;
 }
 
-.reason_paragraph_01 {
+.reason__paragraph-01 {
 	font-family: "Noto Sans JP", serif;
 	font-weight: 700;
 	font-size: 2rem;
@@ -359,49 +394,339 @@ ul {
 
 }
 
-.reason_paragraph_02 {
+.reason__paragraph-02 {
 	font-family: "Noto Sans JP", serif;
 	font-weight: 700;
 	font-size: 2rem;
 	color: #333;
 	line-height: 1.4;
-    margin-top: .8rem;
-    margin-bottom: 1.1rem
+	margin-top: .8rem;
+	margin-bottom: 1.1rem
 }
 
 
-.reason_paragraph_03 {
+.reason__paragraph-03 {
 	font-family: "Noto Sans JP", serif;
 	font-weight: 700;
 	font-size: 2rem;
 	color: #333;
 	line-height: 1.4;
-    margin-top: .8rem;
-    margin-bottom: 1.1rem
+	margin-top: .8rem;
+	margin-bottom: 1.1rem
 }
 
 
-.reason_text_01 {
+.reason__text-01 {
 	font-family: "Noto Sans JP", serif;
 	font-weight: 400;
 	font-size: 1.6rem;
 	color: #333;
 }
 
-.reason_text_02 {
+.reason__text-02 {
 	font-family: "Noto Sans JP", serif;
 	font-weight: 400;
 	font-size: 1.6rem;
 	color: #333;
 }
 
-.reason_text_03 {
+.reason__text-03 {
 	font-family: "Noto Sans JP", serif;
 	font-weight: 400;
 	font-size: 1.6rem;
 	color: #333;
 }
 
-.reason_row_01>picture {
+.reason__row-01>picture {
 	border-radius: 0.1rem;
+}
+
+/*コース・目的
+------------------------------------------ */
+.course-00 {
+	padding-top: 3.1rem;
+	margin-bottom: 6.3rem;
+}
+
+.course__title {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	font-size: 2.8rem;
+	color: #333;
+	text-align: center;
+	margin-top: 2.9rem;
+	padding-bottom: 1.7rem;
+	margin-left: 1.6rem;
+}
+
+.course__tab-content-item--text {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	column-gap: 0.8rem;
+}
+
+.tab-content {
+	background-color: #F2F9FF;
+	padding-right: 1.6rem;
+	padding-left: 1.6rem;
+	padding-top: 2.8rem;
+	padding-bottom: 2.7rem;
+}
+
+.course__tab-content-item--text-detail {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	font-size: 2rem;
+	color: #333;
+}
+
+.course__tab-content-item>picture>img {
+	margin-bottom: 1rem;
+}
+
+.course__tab-content-item {
+	margin-bottom: 2.4rem;
+}
+
+/* タブナビゲーション */
+
+.st>.tab-content {
+	height: auto !important;
+}
+
+.nav__text {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	font-size: 1.8rem;
+}
+
+.st-theme-basic {
+	border: none;
+}
+
+.st>.tab-content>.tab-pane {
+	padding-left: 0rem !important;
+	padding-right: 0rem !important;
+	padding-top: 0rem !important;
+	padding-bottom: 0rem !important;
+}
+
+.tab.st>.nav {
+	column-gap: 1.4rem;
+	flex-direction: row !important;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+}
+
+@media (min-width: 768px) {
+	.tab.st>.nav {
+		column-gap: 1.5rem;
+		flex-direction: row !important;
+	}
+}
+
+.tab.st-theme-basic>.nav {
+	box-shadow: none;
+}
+
+.tab.st-theme-basic>.nav .nav-link {
+	padding-top: 2.4rem;
+	padding-bottom: 2.4rem;
+	line-height: 1;
+	background-color: #F0F0F0;
+	color: #929292;
+	border-top-left-radius: 1.2rem;
+	border-top-right-radius: 1.2rem;
+}
+
+@media (min-width: 768px) {
+	.tab.st-theme-basic>.nav .nav-link {
+		padding-top: 1.45rem;
+		padding-bottom: 1.875rem;
+		font-size: 1.625rem;
+	}
+}
+
+/* アクティブ状態 */
+.tab.st-theme-basic>.nav .nav-link.active {
+	color: #333 !important;
+	background-color: #F2F9FF;
+}
+
+.tab.st-theme-basic>.nav .nav-link.active::after {
+	background-color: unset !important;
+}
+
+
+
+
+/* タブコンテンツ */
+.tab__content {
+	text-align: center;
+	background-color: #ffedcc;
+	border-radius: 0 0 1.25rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+	.tab__content {
+		text-align: center;
+		background-color: #ffedcc;
+		border-radius: 0rem 0rem 1.25rem 1.25rem;
+	}
+}
+
+/*費用
+------------------------------------------ */
+.cost-00 {
+	padding-top: 3.2rem;
+}
+
+.cost__container {
+	padding-right: 1.6rem;
+	padding-left: 1.6rem;
+	margin-bottom: 6.2rem;
+}
+
+.cost__title {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	font-size: 2.8rem;
+	color: #333;
+	text-align: center;
+	margin-top: 2.9rem;
+	padding-bottom: 1.7rem;
+	margin-left: 1.6rem;
+}
+
+.cost__table {
+	border: 0.3rem solid #ccc;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #F5F5F5;
+}
+
+td {
+	border: 0.1rem solid #ccc;
+}
+
+.cost__table--head-quantity {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #333;
+	width: 24%;
+}
+
+.cost__table--head-price {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #333;
+	width: 46%;
+	height: 6.4rem;
+	padding-right: 1.4rem;
+}
+
+.cost__table--quantity {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #333;
+	text-align: center;
+}
+
+.cost__table--price {
+	font-family: "Poppins", serif;
+	font-weight: 700;
+	font-size: 2.8rem;
+	color: #F23397;
+	height: 6.34rem;
+	padding-left: 5.2rem;
+	padding-top: 0.9rem;
+}
+
+
+.cost__table--price-01 {
+	font-family: "Poppins", serif;
+	font-weight: 700;
+	font-size: 2.8rem;
+	color: #F23397;
+	height: 6.3rem;
+	padding-left: 4.7rem;
+	padding-top: 0.9rem;
+}
+
+.cost__table--price-02 {
+	font-family: "Poppins", serif;
+	font-weight: 700;
+	font-size: 2.8rem;
+	color: #F23397;
+	height: 6.1rem;
+	padding-left: 6.2rem;
+	padding-top: 0.9rem;
+}
+
+.cost__table--price-unit {
+	font-family: "Noto Sans JP", serif;
+	font-weight: 500;
+	font-size: 1.6rem;
+	color: #F23397;
+}
+
+/*よくあるご質問、教室検索
+------------------------------------------ */
+.question {
+	position: relative;
+}
+
+.question__text {
+	display: flex;
+	flex-direction: row;
+	row-gap: 0.4375rem;
+	position: absolute;
+	bottom: 39.1%;
+	left: 4.3%;
+	color: #fff;
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	font-size: 2.2rem;
+}
+
+.search {
+	position: relative;
+}
+
+.search__text {
+	display: flex;
+	flex-direction: row;
+	row-gap: 0.4375rem;
+	position: absolute;
+	bottom: 39.1%;
+	left: 4.3%;
+	color: #fff;
+	font-family: "Noto Sans JP", serif;
+	font-weight: 700;
+	font-size: 2.2rem;
+}
+
+/*フッター
+------------------------------------------ */
+.footer {
+	padding-top: 3.1rem;
+	text-align: center;
+	padding-left: 1.5rem;
+	background-color: #ddd;
+	padding-bottom: 2.9rem;
+}
+
+.footer__copyright {
+	font-family: "Poppins", serif;
+	font-weight: 400;
+	font-size: 1.3rem;
+	color: #333;
+	text-align: center;
+
 }
