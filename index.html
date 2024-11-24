@@ -28,8 +28,14 @@
 		<main>
 			<!-- ヘッダー -->
 			<header class="header">
-				<h1 class="header__logo"><a href="./" class="header__logo-link"><img src="assets/image/header_logo_01.svg"
-							alt="Kira-Kira Juku"></a></h1>
+				<h1 class="header__logo">
+					<a href="./" class="header__logo-link">
+						<picture>
+							<source media="(min-width: 768px)" srcset="assets/image/header_logo_pc_01.svg">
+							<img src="assets/image/header_logo_sp_01.svg" alt="Kira-Kira Juku">
+						</picture>
+					</a>
+				</h1>
 
 				<!-- ハンバーガーボタン -->
 				<button type="button" class="hamburger__button">
@@ -38,41 +44,30 @@
 					<span class="hamburger__button-bar"></span>
 				</button>
 
-				<nav class="hamburger-menu header-nav">
-					<ul class="hamburger-menu__list header-nav__list">
-						<li class="header-nav__item">
-							<a href="#" class="header-nav__item-link">
-								<img class="header-nav__item-image" src="assets\image\hamburger_menu_arrow_right_01.svg" alt="">
-								<span class="header-nav__item-text">選ばれる3つの理由</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-
 
 				<!-- ナビゲーション、ヘッダーメニュー -->
 				<nav class="hamburger-menu header-nav">
-					<ul class="hamburger-menu__list header-nav__list">
+					<ul class="hamburger-menu__list">
 						<li class="header-nav__item">
-							<a href="#" class="header-nav__item-link">
+							<a href="#reason" class="header-nav__item-link">
 								<img class="header-nav__item-image" src="assets\image\hamburger_menu_arrow_right_01.svg" alt="">
 								<span class="header-nav__item-text">選ばれる3つの理由</span>
 							</a>
 						</li>
 						<li class="header-nav__item">
-							<a href="#" class="header-nav__item-link">
+							<a href="#course" class="header-nav__item-link">
 								<img class="header-nav__item-image" src="assets\image\hamburger_menu_arrow_right_01.svg" alt="">
 								<span class="header-nav__item-text">コース・目的</span>
 							</a>
 						</li>
 						<li class="header-nav__item">
-							<a href="#" class="header-nav__item-link">
+							<a href="#cost" class="header-nav__item-link">
 								<img class="header-nav__item-image" src="assets\image\hamburger_menu_arrow_right_01.svg" alt="">
-								<span class="header-nav__item-text">費用</span>
+								<span class="header-nav__item-text">費 用</span>
 							</a>
 						</li>
 					</ul>
-					<a href="#" class="button__session button__session-header">入学説明会に申し込む</a>
+					<a href="#" class="button-session">入学説明会に申し込む</a>
 				</nav>
 
 
@@ -94,7 +89,6 @@
 					</div>
 					<img src="assets\image\frame_right_01.png" alt="">
 				</div>
-
 				<div class="cover__wrapper-01">
 					<p class="cover__text-04">現役高校生・高卒生</p>
 					<p class="cover__text-05">入学説明会の</p>
@@ -102,10 +96,11 @@
 				</div>
 			</div>
 
-
-			<a href="#" class="button-77CB33">入学のお問い合わせ</a>
-			<a href="#" class="button-F6AA00">無料体験に申し込む</a>
-			<a href="#" class="button-3AC8AD">資料請求する</a>
+			<div class="button_wrapper">
+				<a href="#" class="button-77CB33">入学のお問い合わせ</a>
+				<a href="#" class="button-F6AA00">無料体験に申し込む</a>
+				<a href="#" class="button-3AC8AD">資料請求する</a>
+			</div>
 
 			<!-- 選ばれる3つの理由 -->
 			<section id="reason" class="reason_00">
@@ -113,10 +108,12 @@
 					<h2 class="reason__title-01">選ばれる<span class="reason__title-02">3</span>つの理由</h2>
 					<!-- 1個目 -->
 					<div class="reason__row-01 reason__row">
-						<picture>
-							<source media="(min-width: 768px)" srcset="assets\image\reason_main_pc_01.jpg">
-							<img src="assets\image\reason_main_sp_01.jpg" alt="">
-						</picture>
+						<div>
+							<picture>
+								<source media="(min-width: 768px)" srcset="assets\image\reason_main_pc_01.jpg">
+								<img src="assets\image\reason_main_sp_01.jpg" alt="">
+							</picture>
+						</div>
 						<div>
 							<h3 class="reason__point">Point<span class="reason__space"> </span><span class="reason__number">1</span></h3>
 							<h4 class="reason__paragraph-01">実績のある講師陣だから安心</h4>
@@ -125,10 +122,12 @@
 					</div>
 					<!-- 2個目 -->
 					<div class="reason__row-02 reason__row">
-						<picture>
-							<source media="(min-width: 768px)" srcset="assets\image\reason_main_pc_02.jpg">
-							<img src="assets\image\reason_main_sp_02.jpg" alt="">
-						</picture>
+						<div>
+							<picture>
+								<source media="(min-width: 768px)" srcset="assets\image\reason_main_pc_02.jpg">
+								<img src="assets\image\reason_main_sp_02.jpg" alt="">
+							</picture>
+						</div>
 						<div>
 							<h3 class="reason__point">Point<span class="reason__space"> </span><span class="reason__number">2</span></h3>
 							<h4 class="reason__paragraph-02">オンラインにも対応だから、早送り巻き戻し視聴できる。</h4>
@@ -137,10 +136,12 @@
 					</div>
 					<!-- 3個目 -->
 					<div class="reason__row-03 reason__row">
-						<picture>
-							<source media="(min-width: 768px)" srcset="assets\image\reason_main_pc_03.jpg">
-							<img src="assets\image\reason_main_sp_03.jpg" alt="">
-						</picture>
+						<div>
+							<picture>
+								<source media="(min-width: 768px)" srcset="assets\image\reason_main_pc_03.jpg">
+								<img src="assets\image\reason_main_sp_03.jpg" alt="">
+							</picture>
+						</div>
 						<div>
 							<h3 class="reason__point">Point<span class="reason__space"> </span><span class="reason__number">3</span></h3>
 							<h4 class="reason__paragraph-03">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</h4>
@@ -182,7 +183,12 @@
 											<img src="assets\image\cource_tab_sp_01.jpg" alt="">
 										</picture>
 										<h3>
-											<div class="course__tab-content-item--text"><img src="assets\image\course_tab_arrow_right.svg" alt=""><span class="course__tab-content-item--text-detail">高卒生</span>
+											<div class="course__tab-content-item--text">
+												<picture>
+													<source media="(min-width: 768px)" srcset="assets\image\course_tab_arrow_right_pc_01.svg">
+													<img src="assets\image\course_tab_arrow_right_sp_01.svg" alt="">
+												</picture>
+												<span class="course__tab-content-item--text-detail">高卒生</span>
 											</div>
 										</h3>
 									</div>
@@ -193,7 +199,12 @@
 											<img src="assets\image\cource_tab_sp_02.jpg" alt="">
 										</picture>
 										<h3>
-											<div class="course__tab-content-item--text"><img src="assets\image\course_tab_arrow_right.svg" alt=""><span class="course__tab-content-item--text-detail">高校3年生</span>
+											<div class="course__tab-content-item--text">
+												<picture>
+													<source media="(min-width: 768px)" srcset="assets\image\course_tab_arrow_right_pc_01.svg">
+													<img src="assets\image\course_tab_arrow_right_sp_01.svg" alt="">
+												</picture>
+												<span class="course__tab-content-item--text-detail">高校3年生</span>
 											</div>
 										</h3>
 									</div>
@@ -204,7 +215,12 @@
 											<img src="assets\image\cource_tab_sp_03.jpg" alt="">
 										</picture>
 										<h3>
-											<div class="course__tab-content-item--text"><img src="assets\image\course_tab_arrow_right.svg" alt=""><span class="course__tab-content-item--text-detail">高校2年生</span>
+											<div class="course__tab-content-item--text">
+												<picture>
+													<source media="(min-width: 768px)" srcset="assets\image\course_tab_arrow_right_pc_01.svg">
+													<img src="assets\image\course_tab_arrow_right_sp_01.svg" alt="">
+												</picture>
+												<span class="course__tab-content-item--text-detail">高校2年生</span>
 											</div>
 										</h3>
 									</div>
@@ -215,7 +231,12 @@
 											<img src="assets\image\cource_tab_sp_04.jpg" alt="">
 										</picture>
 										<h3>
-											<div class="course__tab-content-item--text"><img src="assets\image\course_tab_arrow_right.svg" alt=""><span class="course__tab-content-item--text-detail">高校1年生</span>
+											<div class="course__tab-content-item--text">
+												<picture>
+													<source media="(min-width: 768px)" srcset="assets\image\course_tab_arrow_right_pc_01.svg">
+													<img src="assets\image\course_tab_arrow_right_sp_01.svg" alt="">
+												</picture>
+												<span class="course__tab-content-item--text-detail">高校1年生</span>
 											</div>
 										</h3>
 									</div>
@@ -231,7 +252,12 @@
 											<img src="assets\image\cource_tab_sp_05.jpg" alt="">
 										</picture>
 										<h3>
-											<div class="course__tab-content-item--text"><img src="assets\image\course_tab_arrow_right.svg" alt=""><span class="course__tab-content-item--text-detail">難関大学・医学部合格を目指す</span>
+											<div class="course__tab-content-item--text">
+												<picture>
+													<source media="(min-width: 768px)" srcset="assets\image\course_tab_arrow_right_pc_01.svg">
+													<img src="assets\image\course_tab_arrow_right_sp_01.svg" alt="">
+												</picture>
+												<span class="course__tab-content-item--text-detail">難関大学・医学部合格を目指す</span>
 											</div>
 										</h3>
 									</div>
@@ -242,7 +268,12 @@
 											<img src="assets\image\cource_tab_sp_06.jpg" alt="">
 										</picture>
 										<h3>
-											<div class="course__tab-content-item--text"><img src="assets\image\course_tab_arrow_right.svg" alt=""><span class="course__tab-content-item--text-detail">名門私立大学合格を目指す</span>
+											<div class="course__tab-content-item--text">
+												<picture>
+													<source media="(min-width: 768px)" srcset="assets\image\course_tab_arrow_right_pc_01.svg">
+													<img src="assets\image\course_tab_arrow_right_sp_01.svg" alt="">
+												</picture>
+												<span class="course__tab-content-item--text-detail">名門私立大学合格を目指す</span>
 											</div>
 										</h3>
 									</div>
@@ -253,7 +284,12 @@
 											<img src="assets\image\cource_tab_sp_07.jpg" alt="">
 										</picture>
 										<h3>
-											<div class="course__tab-content-item--text"><img src="assets\image\course_tab_arrow_right.svg" alt=""><span class="course__tab-content-item--text-detail">国公立大学合格を目指す</span>
+											<div class="course__tab-content-item--text">
+												<picture>
+													<source media="(min-width: 768px)" srcset="assets\image\course_tab_arrow_right_pc_01.svg">
+													<img src="assets\image\course_tab_arrow_right_sp_01.svg" alt="">
+												</picture>
+												<span class="course__tab-content-item--text-detail">国公立大学合格を目指す</span>
 											</div>
 										</h3>
 									</div>
@@ -264,7 +300,12 @@
 											<img src="assets\image\cource_tab_sp_08.jpg" alt="">
 										</picture>
 										<h3>
-											<div class="course__tab-content-item--text"><img src="assets\image\course_tab_arrow_right.svg" alt=""><span class="course__tab-content-item--text-detail">海外の大学合格を目指す</span>
+											<div class="course__tab-content-item--text">
+												<picture>
+													<source media="(min-width: 768px)" srcset="assets\image\course_tab_arrow_right_pc_01.svg">
+													<img src="assets\image\course_tab_arrow_right_sp_01.svg" alt="">
+												</picture>
+												<span class="course__tab-content-item--text-detail">海外の大学合格を目指す</span>
 											</div>
 										</h3>
 									</div>
@@ -286,7 +327,7 @@
 			</div>
 
 			<!-- 費用 -->
-			<section id="costo" class="cost-00">
+			<section id="cost" class="cost-00">
 				<h2 class="cost__title">費 用</h2>
 				<div class="cost__container">
 					<table class="cost__table">
@@ -344,21 +385,27 @@
 				</div>
 			</div>
 
-			<div class="question">
-				<picture>
-					<source media="(min-width: 768px)" srcset="assets\image\question_pc_01.png">
-					<img src="assets\image\question_sp_01.png" alt="">
-				</picture>
-				<p class="question__text">よくあるご質問</p>
+			<div class="question__container ">
+				<div>
+					<div class="question">
+						<picture>
+							<source media="(min-width: 768px)" srcset="assets\image\question_pc_01.png">
+							<img src="assets\image\question_sp_01.png" alt="">
+						</picture>
+						<p class="question__text">よくあるご質問</p>
+					</div>
+				</div>
+				<div>
+					<div class="search">
+						<picture>
+							<source media="(min-width: 768px)" srcset="assets\image\search_pc_01.png">
+							<img src="assets\image\search_sp_01.png" alt="">
+							<p class="search__text">お近くの教室を探す</p>
+						</picture>
+					</div>
+				</div>
 			</div>
-			<div class="search">
-				<picture>
-					<source media="(min-width: 768px)" srcset="assets\image\search_pc_01.png">
-					<img src="assets\image\search_sp_01.png" alt="">
-					<p class="search__text">お近くの教室を探す</p>
-				</picture>
 
-			</div>
 
 			<!-- フッター -->
 			<footer class="footer">
