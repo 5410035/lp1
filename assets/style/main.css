@@ -469,11 +469,6 @@ ul {
 	}
 }
 
-@media (min-width: 768px) {
-	.button-77CB33:hover {
-		transform: scale(1.2);
-	}
-}
 
 .button-F6AA00 {
 	display: block;
@@ -513,11 +508,6 @@ ul {
 	}
 }
 
-@media (min-width: 768px) {
-	.button-F6AA00:hover {
-		transform: scale(1.2);
-	}
-}
 
 .button-3AC8AD {
 	display: block;
@@ -555,11 +545,7 @@ ul {
 	}
 }
 
-@media (min-width: 768px) {
-	.button-3AC8AD:hover {
-		transform: scale(1.2);
-	}
-}
+
 
 @media (min-width: 768px) {
 	.button_wrapper {
@@ -603,11 +589,6 @@ ul {
 	}
 }
 
-@media (min-width: 768px) {
-	.button-session:hover {
-		transform: scale(1.2);
-	}
-}
 
 /*入学説明会に申し込むボタン*/
 .apply__button {
@@ -690,12 +671,6 @@ ul {
 	}
 }
 
-
-@media (min-width: 768px) {
-	.apply__button-text:hover {
-		transform: scale(1.2);
-	}
-}
 
 /*選ばれる３つの理由
 ------------------------------------------ */
@@ -1067,7 +1042,7 @@ ul {
 	}
 }
 
-.course__tab-content-item--text {
+.course__tab-content-item--link-text {
 	display: flex;
 	flex-direction: row;
 	justify-content: start;
@@ -1076,7 +1051,7 @@ ul {
 
 
 @media (min-width: 768px) {
-	.course__tab-content-item--text {
+	.course__tab-content-item--link-text {
 		display: flex;
 		flex-direction: row;
 		justify-content: start;
@@ -1085,12 +1060,40 @@ ul {
 	}
 }
 
-.course__tab-content-item--text>picture {
+@media (min-width: 768px) {
+	.course__tab-content-item--link {
+		display: block;
+		width: 53.2rem;
+		height: 32.9rem;
+		overflow: hidden;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.course__tab-content-item--link img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+@media (min-width: 768px) {
+	.course__tab-content-item--link img:hover {
+		transform: scale(1.2);
+		transition: transform 0.6s;
+	}
+}
+
+.course__tab-content-item--link-text img {
 	margin-top: .6rem;
 }
 
 @media (min-width: 768px) {
-	.course__tab-content-item--text>picture {
+	.course__tab-content-item--text img {
 		margin-top: .7rem;
 	}
 }
@@ -1485,19 +1488,38 @@ td {
 }
 
 @media (min-width: 768px) {
-	.question__container {
-		display: flex;
-		flex-direction: row;
+	.question {
+		width: 50%;
 		overflow: hidden;
 	}
 }
 
-.question>picture>img {
-	width: 100%;
+@media (min-width: 768px) {
+	.question :hover {}
 }
 
 @media (min-width: 768px) {
-	.question>picture>img:hover {
+	.question__container {
+		display: flex;
+		flex-direction: row;
+		height: 32rem;
+	}
+}
+
+.question img {
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width: 768px) {
+	.question img {
+		object-fit: cover;
+		transition: transform 0.6s;
+	}
+}
+
+@media (min-width: 768px) {
+	.question img:hover {
 		transform: scale(1.2);
 	}
 }
@@ -1529,12 +1551,29 @@ td {
 	position: relative;
 }
 
-.search>picture>img {
+@media (min-width: 768px) {
+	.search {
+		position: relative;
+		width: 50%;
+		overflow: hidden;
+	}
+}
+
+.search img {
 	width: 100%;
+	height: 100%;
+}
+
+
+@media (min-width: 768px) {
+	.search img {
+		object-fit: cover;
+		transition: transform 0.6s;
+	}
 }
 
 @media (min-width: 768px) {
-	.search>picture>img:hover {
+	.search img:hover {
 		transform: scale(1.2);
 	}
 }
