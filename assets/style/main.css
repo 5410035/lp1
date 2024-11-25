@@ -2,6 +2,7 @@
 ------------------------------------------ */
 html {
 	font-size: calc(10 * 100vw / 375);
+	scroll-behavior: smooth;
 }
 
 @media (min-width:768px) {
@@ -1141,16 +1142,16 @@ ul {
 
 @media (min-width: 768px) {
 	.course__tab-content-item {
+		width: calc((100% - 32px) / 2);
 		margin-bottom: 0rem;
 	}
 }
 
 @media (min-width: 768px) {
-	.course__tab-content-item {
-		width: calc((100% - 32px) / 2);
+	.course__tab-content-item>picture>img:hover {
+		transform: scale(1.2);
 	}
 }
-
 
 @media (min-width: 768px) {
 	.course__tab-content-wrapper {
@@ -1168,6 +1169,12 @@ ul {
 
 .st>.tab-content {
 	height: auto !important;
+}
+
+@media (min-width: 768px) {
+	.st>.tab-content {
+		overflow: visible;
+	}
 }
 
 .nav__text {
@@ -1481,11 +1488,18 @@ td {
 	.question__container {
 		display: flex;
 		flex-direction: row;
+		overflow: hidden;
 	}
 }
 
 .question>picture>img {
 	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.question>picture>img:hover {
+		transform: scale(1.2);
+	}
 }
 
 .question__text {
@@ -1517,6 +1531,12 @@ td {
 
 .search>picture>img {
 	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.search>picture>img:hover {
+		transform: scale(1.2);
+	}
 }
 
 .search__text {
