@@ -103,6 +103,18 @@ ul {
 	}
 }
 
+.header__logo-link img {
+	height: 7rem;
+	width: 37.5rem;
+}
+
+@media (min-width: 768px) {
+	.header__logo-link img {
+		height: 4.5rem;
+		width: 24.1rem;
+	}
+}
+
 /* ハンバーガーボタン */
 .hamburger__button {
 	width: 7rem;
@@ -249,16 +261,35 @@ ul {
 		margin-top: 10.1rem;
 		position: relative;
 		margin-bottom: 2.4rem;
+		height: 65.1rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
-.cover>picture>img {
+.cover img {
 	width: 100%;
 }
 
 @media (min-width: 768px) {
-	.cover>picture>img {
-		min-height: 55rem;
+	.cover img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.cover__wrapper {
+	position: absolute;
+	top: 13.9%;
+	left: 4.3%;
+}
+
+@media (min-width: 768px) {
+	.cover__wrapper {
+		position: absolute;
+		top: 16%;
+		left: 21.3%;
 	}
 }
 
@@ -266,9 +297,7 @@ ul {
 	display: flex;
 	flex-direction: row;
 	row-gap: .4375rem;
-	position: absolute;
-	bottom: 59.1%;
-	left: 4.3%;
+	margin-bottom: 1.8rem;
 }
 
 @media (min-width: 768px) {
@@ -276,9 +305,7 @@ ul {
 		display: flex;
 		flex-direction: row;
 		row-gap: 0.4375rem;
-		position: absolute;
-		bottom: 60.9%;
-		left: 21.3%
+		margin-bottom: 2.9rem;
 	}
 }
 
@@ -414,18 +441,10 @@ ul {
 	}
 }
 
-.cover__wrapper-01 {
-	position: absolute;
-	bottom: 16%;
-	left: 4.3%
-}
+.cover__wrapper-01 {}
 
 @media (min-width: 768px) {
-	.cover__wrapper-01 {
-		position: absolute;
-		bottom: 19.4%;
-		left: 21.3%
-	}
+	.cover__wrapper-01 {}
 }
 
 /* ボタン
@@ -1057,6 +1076,7 @@ ul {
 		justify-content: start;
 		column-gap: 1.2rem;
 		padding-bottom: 3.4rem;
+		margin-top: 1.6rem;
 	}
 }
 
@@ -1089,11 +1109,11 @@ ul {
 }
 
 .course__tab-content-item--link-text img {
-	margin-top: .6rem;
+	margin-top: 1.1rem;
 }
 
 @media (min-width: 768px) {
-	.course__tab-content-item--text img {
+	.course__tab-content-item--link-text img {
 		margin-top: .7rem;
 	}
 }
@@ -1126,13 +1146,13 @@ ul {
 	color: #333;
 }
 
-.course__tab-content-item>picture>img {
+.course__tab-content-item--link img {
 	margin-bottom: 1rem;
 	width: 100%;
 }
 
 @media (min-width: 768px) {
-	.course__tab-content-item>picture>img {
+	.course__tab-content-item--link img {
 		margin-bottom: 1.4rem;
 		width: 100%;
 		margin-top: .2rem;
