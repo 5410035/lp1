@@ -441,12 +441,6 @@ ul {
 	}
 }
 
-.cover__wrapper-01 {}
-
-@media (min-width: 768px) {
-	.cover__wrapper-01 {}
-}
-
 /* ボタン
 ------------------------------------------ */
 
@@ -1512,10 +1506,6 @@ td {
 		width: 50%;
 		overflow: hidden;
 	}
-}
-
-@media (min-width: 768px) {
-	.question :hover {}
 }
 
 @media (min-width: 768px) {
