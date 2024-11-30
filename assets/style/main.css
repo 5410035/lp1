@@ -1513,6 +1513,7 @@ td {
 
 .question-link {
 	position: relative;
+	display: block;
 }
 
 @media (min-width: 768px) {
@@ -1539,15 +1540,19 @@ td {
 }
 
 @media (min-width: 768px) {
-	.question-link img:hover {
+	.footer-link__image:hover {
 		transform: scale(1.2);
 	}
 }
 
 @media (min-width: 768px) {
-	.footer-link__image  img:hover {
+	.footer-link__image img:hover {
 		transform: scale(1.2);
 	}
+}
+
+.question-link {
+	display: block;
 }
 
 @media (min-width: 768px) {
@@ -1587,9 +1592,9 @@ td {
 	}
 }
 
-
 .search-link {
 	position: relative;
+	display: block;
 }
 
 @media (min-width: 768px) {
@@ -1612,12 +1617,6 @@ td {
 		transition: transform .6s;
 		opacity: 1;
 		height: 100%;
-	}
-}
-
-@media (min-width: 768px) {
-	.search-link img:hover {
-		transform: scale(1.2);
 	}
 }
 
