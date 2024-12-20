@@ -1,147 +1,147 @@
 /* 可変レイアウト
 ------------------------------------------ */
 html {
-	font-size: calc(10 * 100vw / 375);
-	scroll-behavior: smooth;
+    font-size: calc(10 * 100vw / 375);
+    scroll-behavior: smooth;
 }
 
 @media (min-width:768px) {
-	html {
-		font-size: calc(10 * 100vw / 1200);
-	}
+    html {
+        font-size: calc(10 * 100vw / 1200);
+    }
 }
 
 @media (min-width: 1200px) {
-	html {
-		font-size: 62.5%;
-	}
+    html {
+        font-size: 62.5%;
+    }
 }
 
 /* ベースのスタイル
 ------------------------------------------ */
 body {
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 400;
-	line-height: 1.75;
-	color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #333;
 }
 
 a {
-	color: #333;
-	text-decoration: none;
+    color: #333;
+    text-decoration: none;
 }
 
 a,
 a:hover,
 a i {
-	transition: opacity .3s;
+    transition: opacity .3s;
 }
 
 @media (min-width: 768px) {
-	a:hover {
-		opacity: .6;
-	}
+    a:hover {
+        opacity: .6;
+    }
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
 }
 
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 /* ヘッダー
 ------------------------------------------ */
 .header {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 1;
-	display: flex;
-	justify-content: space-between;
-	background-color: #fff;
-	box-shadow: 0 0 .075rem 0 #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 .075rem 0 #000;
 }
 
 @media (min-width: 768px) {
-	.header {
-		justify-content: center;
-		column-gap: 15.9rem;
-	}
+    .header {
+        justify-content: center;
+        column-gap: 15.9rem;
+    }
 }
 
 /* ロゴ */
 .header__logo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #fff;
-	line-height: 0;
-	margin-left: 1.6rem;
-	margin-top: 1.8rem;
-	margin-bottom: 1.6rem;
-	width: 16.6rem;
-	height: 3.4rem
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    line-height: 0;
+    margin-left: 1.6rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.6rem;
+    width: 16.6rem;
+    height: 3.4rem
 }
 
 @media (min-width: 768px) {
-	.header__logo {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: #fff;
-		line-height: 0;
-		margin-left: 0rem;
-		margin-top: 2.8rem;
-		margin-bottom: 2.8rem;
-		width: 24.1rem;
-		height: 4.5rem
-	}
+    .header__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        line-height: 0;
+        margin-left: 0rem;
+        margin-top: 2.8rem;
+        margin-bottom: 2.8rem;
+        width: 24.1rem;
+        height: 4.5rem
+    }
 }
 
 .header__logo-link img {
-	height: 7rem;
-	width: 37.5rem;
+    height: 7rem;
+    width: 37.5rem;
 }
 
 @media (min-width: 768px) {
-	.header__logo-link img {
-		height: 4.5rem;
-		width: 24.1rem;
-	}
+    .header__logo-link img {
+        height: 4.5rem;
+        width: 24.1rem;
+    }
 }
 
 /* ハンバーガーボタン */
 .hamburger__button {
-	width: 7rem;
-	height: 7rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	row-gap: .7rem;
-	background-color: #005BAC
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: .7rem;
+    background-color: #005BAC
 }
 
 @media (min-width: 768px) {
-	.hamburger__button {
-		display: none;
-	}
+    .hamburger__button {
+        display: none;
+    }
 }
 
 
 .hamburger__button-bar {
-	width: 3rem;
-	height: .4rem;
-	background-color: #fff;
+    width: 3rem;
+    height: .4rem;
+    background-color: #fff;
 }
 
 .header__logo-link>img {
-	width: 100%;
+    width: 100%;
 }
 
 /* ハンバーガーメニュー
@@ -149,101 +149,103 @@ ul {
 
 
 @media (min-width: 768px) {
-	.hamburger-menu {
-		background-color: #fff;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		column-gap: 4.8rem;
-	}
+    .hamburger-menu {
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 4.8rem;
+        height: 6.1rem;
+        margin-top: 2.1rem;
+    }
 }
 
 @media (max-width: 767.9px) {
-	.hamburger-menu {
-		position: fixed;
-		display: flex;
-		flex-direction: column;
-		top: 7rem;
-		background-color: #005BAC;
-		transform: translateX(100%);
-		transition: transform 0.6s;
-		left: 0rem;
-		right: 0rem;
-		padding-left: 2rem;
-		padding-right: 2rem;
-		padding-bottom: 3.1rem;
-	}
+    .hamburger-menu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 7rem;
+        background-color: #005BAC;
+        transform: translateX(100%);
+        transition: transform 0.6s;
+        left: 0rem;
+        right: 0rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 3.1rem;
+    }
 }
 
 .header-nav__item-text {
-	color: #fff;
-	font-family: "Noto Sans JP", serif;
-	font-size: 1.8rem;
-	font-weight: 500;
+    color: #fff;
+    font-family: "Noto Sans JP", serif;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 @media (min-width: 768px) {
-	.header-nav__item-text {
-		color: #333;
-		font-family: "Noto Sans JP", serif;
-		font-size: 2rem;
-		font-weight: 500;
-		flex: 1;
-		width: 172px;
-	}
+    .header-nav__item-text {
+        color: #333;
+        font-family: "Noto Sans JP", serif;
+        font-size: 2rem;
+        font-weight: 500;
+        flex: 1;
+        width: 172px;
+    }
 }
 
 .header-nav__item-link {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: start;
-	column-gap: 1rem;
-	margin-top: 1.6rem;
-	margin-bottom: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    column-gap: 1rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
 }
 
 @media (min-width: 768px) {
-	.header-nav__item-link {
-		display: block;
-		column-gap: 0rem;
-		margin-top: 0rem;
-		margin-bottom: 0rem;
-	}
+    .header-nav__item-link {
+        display: block;
+        column-gap: 0rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
 }
 
 
 .header-nav__item {
-	border-bottom: .1rem solid #7FADD5;
-	width: 100%;
+    border-bottom: .1rem solid #7FADD5;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
-	.header-nav__item {
-		border-bottom: none;
-		width: auto;
-	}
+    .header-nav__item {
+        border-bottom: none;
+        width: auto;
+    }
 }
 
 @media (min-width: 768px) {
-	.hamburger-menu__list {
-		display: flex;
-		flex-direction: row;
-		column-gap: 4.8rem;
-	}
+    .hamburger-menu__list {
+        display: flex;
+        flex-direction: row;
+        column-gap: 4.8rem;
+    }
 }
 
 @media (min-width: 768px) {
-	.header-nav__item-image {
-		display: none;
-	}
+    .header-nav__item-image {
+        display: none;
+    }
 }
 
 
 /* 開いている状態 */
 .hamburger-menu_active {
-	transform: translateX(0);
+    transform: translateX(0);
 }
 
 
@@ -251,444 +253,444 @@ ul {
 /* カバー
 ------------------------------------------ */
 .cover {
-	margin-top: 7rem;
-	margin-bottom: 2.4rem;
-	height: 25rem;
+    margin-top: 7rem;
+    margin-bottom: 2.4rem;
+    height: 25rem;
 }
 
 
 @media (min-width: 768px) {
-	.cover {
-		margin-top: 10.1rem;
-		margin-bottom: 2.4rem;
-		height: 65.1rem;
-	}
+    .cover {
+        margin-top: 10.1rem;
+        margin-bottom: 2.4rem;
+        height: 65.1rem;
+    }
 }
 
 .cover__image {
-	background-image: url("../image/cover_main_sp_01.png");
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-size: cover;
+    background-image: url("/assets/image/cover_main_sp_01.png");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 @media (min-width: 768px) {
-	.cover__image {
-		background-image: url("../image/cover_main_pc_01.png");
-		width: 100%;
-		height: 100%;
-		background-position: center;
-		background-size: cover;
-	}
+    .cover__image {
+        background-image: url("/assets/image/cover_main_pc_01.png");
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 .cover__wrapper {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 34.3rem;
-	padding-top: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 34.3rem;
+    padding-top: 3.5rem;
 
 }
 
 @media (min-width: 768px) {
-	.cover__wrapper {
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 110rem;
-		padding-top: 10.5rem;
-	}
+    .cover__wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 110rem;
+        padding-top: 10.5rem;
+    }
 }
 
 .badge {
-	display: flex;
-	flex-direction: row;
-	row-gap: .4375rem;
-	margin-bottom: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    row-gap: .4375rem;
+    margin-bottom: 1.8rem;
 }
 
 @media (min-width: 768px) {
-	.badge {
-		display: flex;
-		flex-direction: row;
-		row-gap: .4375rem;
-		margin-bottom: 2.9rem;
-	}
+    .badge {
+        display: flex;
+        flex-direction: row;
+        row-gap: .4375rem;
+        margin-bottom: 2.9rem;
+    }
 }
 
 .badge>img {
-	width: 2.4rem;
-	height: auto;
+    width: 2.4rem;
+    height: auto;
 }
 
 @media (min-width: 768px) {
-	.badge>img {
-		width: 5.3rem;
-		height: auto;
-		margin-left: .3rem;
-		margin-right: 1.6rem;
-	}
+    .badge>img {
+        width: 5.3rem;
+        height: auto;
+        margin-left: .3rem;
+        margin-right: 1.6rem;
+    }
 }
 
 .badge__text-first {
-	font-family: "Noto Sans JP", serif;
-	font-size: 1.1rem;
-	font-weight: 400;
-	color: #333;
-	margin-bottom: .5rem;
+    font-family: "Noto Sans JP", serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: .5rem;
 }
 
 @media (min-width: 768px) {
-	.badge__text-first {
-		font-family: "Noto Sans JP", serif;
-		font-size: 2rem;
-		font-weight: 400;
-		color: #333;
-		margin-bottom: 1.4rem;
-		margin-right: 1.6rem;
-		margin-top: .6rem;
-	}
+    .badge__text-first {
+        font-family: "Noto Sans JP", serif;
+        font-size: 2rem;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 1.4rem;
+        margin-right: 1.6rem;
+        margin-top: .6rem;
+    }
 }
 
 .badge__text-second {
-	font-family: "Poppins", serif;
-	font-weight: 800;
-	font-style: italic;
-	font-size: 2.5rem;
-	color: #F11F8D;
-	text-align: center;
-	line-height: 1;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2.5rem;
+    color: #F11F8D;
+    text-align: center;
+    line-height: 1;
 }
 
 @media (min-width: 768px) {
-	.badge__text-second {
-		font-family: "Poppins", serif;
-		font-weight: 800;
-		font-style: italic;
-		font-size: 5.4rem;
-		color: #F11F8D;
-		text-align: center;
-		line-height: 1;
-	}
+    .badge__text-second {
+        font-family: "Poppins", serif;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 5.4rem;
+        color: #F11F8D;
+        text-align: center;
+        line-height: 1;
+    }
 }
 
 .badge__text-none {
-	font-family: "Poppins", serif;
-	font-weight: 800;
-	font-style: italic;
-	font-size: 3.6rem;
-	color: #F11F8D;
-	text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 3.6rem;
+    color: #F11F8D;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
-	.badge__text-none {
-		font-family: "Poppins", serif;
-		font-weight: 800;
-		font-style: italic;
-		font-size: 7.4rem;
-		color: #F11F8D;
-		text-align: center;
-	}
+    .badge__text-none {
+        font-family: "Poppins", serif;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 7.4rem;
+        color: #F11F8D;
+        text-align: center;
+    }
 }
 
 .catch__text-first {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 400;
-	font-size: 1.4rem;
-	color: #333;
-	margin-bottom: .3rem;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: .3rem;
 }
 
 @media (min-width: 768px) {
-	.catch__text-first {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 400;
-		font-size: 3.3rem;
-		color: #333;
-		margin-bottom: .3rem;
-	}
+    .catch__text-first {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 400;
+        font-size: 3.3rem;
+        color: #333;
+        margin-bottom: .3rem;
+    }
 }
 
 .catch__text-second {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 900;
-	font-size: 2.5rem;
-	color: #005BAC;
-	line-height: 1;
-	margin-bottom: 1.2rem;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #005BAC;
+    line-height: 1;
+    margin-bottom: 1.2rem;
 }
 
 @media (min-width: 768px) {
-	.catch__text-second {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 900;
-		font-size: 6rem;
-		color: #005BAC;
-		line-height: 1.25;
-		margin-bottom: 0rem;
-	}
+    .catch__text-second {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 900;
+        font-size: 6rem;
+        color: #005BAC;
+        line-height: 1.25;
+        margin-bottom: 0rem;
+    }
 }
 
 .catch__text-third {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 900;
-	font-size: 2.5rem;
-	color: #005BAC;
-	line-height: 1;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #005BAC;
+    line-height: 1;
 }
 
 @media (min-width: 768px) {
-	.catch__text-third {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 900;
-		font-size: 6rem;
-		color: #005BAC;
-		line-height: 1.75;
-	}
+    .catch__text-third {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 900;
+        font-size: 6rem;
+        color: #005BAC;
+        line-height: 1.65;
+    }
 }
 
 /* ボタン
 ------------------------------------------ */
 
 .button-77CB33 {
-	display: block;
-	border-radius: 2.4rem;
-	width: 24.9rem;
-	height: 4.8rem;
-	background-color: #77CB33;
-	text-align: center;
-	position: relative;
-	padding-top: 1rem;
-	font-size: 1.6rem;
-	color: #fff;
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1.2rem;
+    display: block;
+    border-radius: 2.4rem;
+    width: 24.9rem;
+    height: 4.8rem;
+    background-color: #77CB33;
+    text-align: center;
+    position: relative;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.2rem;
 }
 
 @media (min-width: 768px) {
-	.button-77CB33 {
-		display: block;
-		border-radius: 3.4rem;
-		width: 33.9rem;
-		height: 7.5rem;
-		background-color: #77CB33;
-		text-align: center;
-		position: relative;
-		padding-top: 1.6rem;
-		font-size: 2.4rem;
-		color: #fff;
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		margin-bottom: 1.2rem;
-		margin-left: 0;
-		margin-right: 0;
-	}
+    .button-77CB33 {
+        display: block;
+        border-radius: 3.4rem;
+        width: 33.9rem;
+        height: 7.5rem;
+        background-color: #77CB33;
+        text-align: center;
+        position: relative;
+        padding-top: 1.6rem;
+        font-size: 2.4rem;
+        color: #fff;
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        margin-bottom: 1.2rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 
 .button-F6AA00 {
-	display: block;
-	border-radius: 2.4rem;
-	width: 24.9rem;
-	height: 4.8rem;
-	background-color: #F6AA00;
-	text-align: center;
-	position: relative;
-	padding-top: 1rem;
-	font-size: 1.6rem;
-	color: #fff;
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1.2rem;
+    display: block;
+    border-radius: 2.4rem;
+    width: 24.9rem;
+    height: 4.8rem;
+    background-color: #F6AA00;
+    text-align: center;
+    position: relative;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.2rem;
 }
 
 @media (min-width: 768px) {
-	.button-F6AA00 {
-		display: block;
-		border-radius: 3.4rem;
-		width: 33.9rem;
-		height: 7.5rem;
-		background-color: #F6AA00;
-		text-align: center;
-		position: relative;
-		padding-top: 1.6rem;
-		font-size: 2.4rem;
-		color: #fff;
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		margin-bottom: 1.2rem;
-		margin-left: 0;
-		margin-right: 0;
-	}
+    .button-F6AA00 {
+        display: block;
+        border-radius: 3.4rem;
+        width: 33.9rem;
+        height: 7.5rem;
+        background-color: #F6AA00;
+        text-align: center;
+        position: relative;
+        padding-top: 1.6rem;
+        font-size: 2.4rem;
+        color: #fff;
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        margin-bottom: 1.2rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 
 .button-3AC8AD {
-	display: block;
-	border-radius: 2.4rem;
-	width: 24.9rem;
-	height: 4.8rem;
-	background-color: #3AC8AD;
-	text-align: center;
-	position: relative;
-	padding-top: 1rem;
-	font-size: 1.6rem;
-	color: #fff;
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    border-radius: 2.4rem;
+    width: 24.9rem;
+    height: 4.8rem;
+    background-color: #3AC8AD;
+    text-align: center;
+    position: relative;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 768px) {
-	.button-3AC8AD {
-		display: block;
-		border-radius: 3.4rem;
-		width: 33.9rem;
-		height: 7.5rem;
-		background-color: #3AC8AD;
-		text-align: center;
-		position: relative;
-		padding-top: 1.6rem;
-		font-size: 2.4rem;
-		color: #fff;
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		margin-left: 0;
-		margin-right: 0;
-	}
+    .button-3AC8AD {
+        display: block;
+        border-radius: 3.4rem;
+        width: 33.9rem;
+        height: 7.5rem;
+        background-color: #3AC8AD;
+        text-align: center;
+        position: relative;
+        padding-top: 1.6rem;
+        font-size: 2.4rem;
+        color: #fff;
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 
 
 @media (min-width: 768px) {
-	.button_wrapper {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		column-gap: 4.1rem;
-		margin-top: -6.1rem;
-	}
+    .button__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 4.1rem;
+        margin-top: -6.1rem;
+    }
 }
 
 
 /*ハンバーガーメニュー入学説明会に申し込むボタン*/
 .button-session {
-	color: #005BAC;
-	background-color: #fff;
-	font-size: 1.8rem;
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	padding-right: 3.6rem;
-	padding-left: 8.1rem;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	border-radius: 3.5rem;
-	margin-top: 3.4rem;
+    color: #005BAC;
+    background-color: #fff;
+    font-size: 1.8rem;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    padding-right: 3.6rem;
+    padding-left: 8.1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 3.5rem;
+    margin-top: 3.4rem;
 }
 
 @media (min-width: 768px) {
-	.button-session {
-		color: #fff;
-		background: linear-gradient(to right, #0573E1, #53A2F0);
-		font-size: 2rem;
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		padding-right: 4.1rem;
-		padding-left: 4.1rem;
-		padding-top: 1.3rem;
-		padding-bottom: 1.3rem;
-		border-radius: 3.4rem;
-		margin-top: 0rem;
-	}
+    .button-session {
+        color: #fff;
+        background: linear-gradient(to right, #0573E1, #53A2F0);
+        font-size: 2rem;
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        padding-right: 4.1rem;
+        padding-left: 4.1rem;
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+        border-radius: 3.4rem;
+        margin-top: 0rem;
+    }
 }
 
 
 /*入学説明会に申し込むボタン*/
 .apply__button {
-	background-color: #FFEDED;
-	padding-right: 3.6rem;
-	padding-left: 3.6rem;
-	padding-top: 3.8rem;
-	padding-bottom: 4.0rem
+    background-color: #FFEDED;
+    padding-right: 3.6rem;
+    padding-left: 3.6rem;
+    padding-top: 3.8rem;
+    padding-bottom: 4.0rem
 }
 
 @media (min-width: 768px) {
-	.apply__button {
-		background-color: #FFEDED;
-		padding-right: 3.6rem;
-		padding-left: 3.6rem;
-		padding-top: 5.3rem;
-		padding-bottom: 4.2rem;
-	}
+    .apply__button {
+        background-color: #FFEDED;
+        padding-right: 3.6rem;
+        padding-left: 3.6rem;
+        padding-top: 5.3rem;
+        padding-bottom: 4.4rem;
+    }
 }
 
 .apply__text {
-	text-align: center;
-	font-size: 1.6rem;
-	color: #333;
-	font-family: "Noto Sans JP", serif;
-	font-weight: 400;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: .9rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #333;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .9rem;
 }
 
 @media (min-width: 768px) {
-	.apply__text {
-		text-align: center;
-		font-size: 1.6rem;
-		color: #333;
-		font-family: "Noto Sans JP", serif;
-		font-weight: 400;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 1.9rem;
-	}
+    .apply__text {
+        text-align: center;
+        font-size: 1.6rem;
+        color: #333;
+        font-family: "Noto Sans JP", serif;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.8rem;
+    }
 }
 
 .apply__button-text {
-	display: block;
-	border-radius: 3.45rem;
-	width: 30.4rem;
-	height: 6.9rem;
-	background: linear-gradient(to right, #0573E1, #53A2F0);
-	text-align: center;
-	position: relative;
-	padding-top: 1.6rem;
-	font-size: 2rem;
-	color: #fff;
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    border-radius: 3.45rem;
+    width: 30.4rem;
+    height: 6.9rem;
+    background: linear-gradient(to right, #0573E1, #53A2F0);
+    text-align: center;
+    position: relative;
+    padding-top: 1.6rem;
+    font-size: 2rem;
+    color: #fff;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 768px) {
-	.apply__button-text {
-		display: block;
-		border-radius: 3.75rem;
-		width: 35.9rem;
-		height: 7.5rem;
-		background: linear-gradient(to right, #0573E1, #53A2F0);
-		text-align: center;
-		position: relative;
-		padding-top: 1.6rem;
-		font-size: 2.4rem;
-		color: #fff;
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 1.2rem;
-		padding-left: 2.3rem;
-	}
+    .apply__button-text {
+        display: block;
+        border-radius: 3.75rem;
+        width: 35.9rem;
+        height: 7.5rem;
+        background: linear-gradient(to right, #0573E1, #53A2F0);
+        text-align: center;
+        position: relative;
+        padding-top: 1.6rem;
+        font-size: 2.4rem;
+        color: #fff;
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.2rem;
+        padding-left: 2.3rem;
+    }
 }
 
 
@@ -696,501 +698,502 @@ ul {
 ------------------------------------------ */
 
 .reason_zero {
-	display: block;
-	padding-top: 50px;
-	margin-top: -50px;
+    display: block;
+    padding-top: 50px;
+    margin-top: -50px;
 }
 
 .reason__container {
-	padding-right: 1.6rem;
-	padding-left: 1.6rem;
-	padding-top: 2.8rem;
-	margin-bottom: 3.4rem;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+    padding-top: 2.8rem;
+    margin-bottom: 3.4rem;
 }
 
 
 @media (min-width: 768px) {
-	.reason__container {
-		padding-right: 1.6rem;
-		padding-left: 1.6rem;
-		padding-top: 6.9rem;
-		margin-bottom: 3.4rem;
-	}
+    .reason__container {
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+        padding-top: 6.9rem;
+        margin-bottom: 3.4rem;
+    }
 }
 
 .reason__row-first {
-	margin-bottom: 3.4rem;
+    margin-bottom: 3.4rem;
 }
 
 @media (min-width: 768px) {
-	.reason__row-first {
-		display: flex;
-		flex-direction: row;
-		margin-bottom: 4.4rem;
-		justify-content: center;
-		column-gap: 4rem;
-	}
+    .reason__row-first {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4.4rem;
+        justify-content: center;
+        column-gap: 4rem;
+    }
 }
 
 @media (min-width: 768px) {
-	.reason__row-first>div {
-		max-width: 560px;
-		width: calc((100% - 40px) / 2);
-	}
+    .reason__row-first>div {
+        max-width: 560px;
+        width: calc((100% - 40px) / 2);
+    }
 }
 
 .reason__row-second {
-	margin-bottom: 3.4rem;
+    margin-bottom: 3.4rem;
 }
 
 
 @media (min-width: 768px) {
-	.reason__row-second>div {
-		max-width: 560px;
-		width: calc((100% - 40px) / 2);
-	}
+    .reason__row-second>div {
+        max-width: 560px;
+        width: calc((100% - 40px) / 2);
+    }
 }
 
 
 @media (min-width: 768px) {
-	.reason__row-second {
-		display: flex;
-		flex-direction: row-reverse;
-		margin-bottom: 4rem;
-		justify-content: center;
-		column-gap: 4rem;
-	}
+    .reason__row-second {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 4rem;
+        justify-content: center;
+        column-gap: 4rem;
+    }
 }
 
 @media (min-width: 768px) {
-	.reason__row-third {
-		display: flex;
-		flex-direction: row;
-		margin-bottom: 7.4rem;
-		justify-content: center;
-		column-gap: 4rem;
-	}
+    .reason__row-third {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 7.4rem;
+        justify-content: center;
+        column-gap: 4rem;
+    }
 }
 
 
 @media (min-width: 768px) {
-	.reason__row-third>div {
-		max-width: 560px;
-		width: calc((100% - 40px) / 2);
-	}
+    .reason__row-third>div {
+        max-width: 560px;
+        width: calc((100% - 40px) / 2);
+    }
 }
 
 
 .reason__title-first {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	font-size: 2.8rem;
-	color: #333;
-	text-align: center;
-	padding-bottom: 1.9rem;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #333;
+    text-align: center;
+    padding-bottom: 1.9rem;
 }
 
 @media (min-width: 768px) {
-	.reason__title-first {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		font-size: 3.6rem;
-		color: #333;
-		text-align: center;
-		padding-bottom: 2.9rem;
-	}
+    .reason__title-first {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        font-size: 3.6rem;
+        color: #333;
+        text-align: center;
+        padding-bottom: 2.9rem;
+    }
 }
 
 .reason__title-second {
-	font-family: "Poppins", serif;
-	font-weight: 700;
-	font-size: 4rem;
-	color: #F11F8D;
-	line-height: 1;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #F11F8D;
+    line-height: 1;
 }
 
 @media (min-width: 768px) {
-	.reason__title-second {
-		font-family: "Poppins", serif;
-		font-weight: 700;
-		font-size: 5.4rem;
-		color: #F11F8D;
-		line-height: 1;
-	}
+    .reason__title-second {
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-size: 5.4rem;
+        color: #F11F8D;
+        line-height: 1;
+    }
 }
 
 .reason__point {
-	font-family: "Poppins", serif;
-	font-weight: 900;
-	font-style: italic;
-	font-size: 2.4rem;
-	color: #F11F8D;
-	line-height: 1;
-	margin-top: 1.6rem;
-	margin-bottom: .4rem;
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.4rem;
+    color: #F11F8D;
+    line-height: 1;
+    margin-top: 1.6rem;
+    margin-bottom: .4rem;
 }
 
 @media (min-width: 768px) {
-	.reason__point {
-		font-family: "Poppins", serif;
-		font-weight: 900;
-		font-style: italic;
-		font-size: 2.8rem;
-		color: #F11F8D;
-		line-height: 1;
-		margin-top: 1.6rem;
-		margin-bottom: .4rem;
-	}
+    .reason__point {
+        font-family: "Poppins", serif;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 2.8rem;
+        color: #F11F8D;
+        line-height: 1;
+        margin-top: 1.6rem;
+        margin-bottom: .4rem;
+    }
 }
 
 .reason__space {
-	font-family: "Poppins", serif;
-	font-weight: 900;
-	font-style: italic;
-	font-size: 3.2rem;
-	color: #F11F8D;
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3.2rem;
+    color: #F11F8D;
 }
 
 @media (min-width: 768px) {
-	.reason__space {
-		font-family: "Poppins", serif;
-		font-weight: 900;
-		font-style: italic;
-		font-size: 3.2rem;
-		color: #F11F8D;
-	}
+    .reason__space {
+        font-family: "Poppins", serif;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 3.2rem;
+        color: #F11F8D;
+    }
 }
 
 .reason__number {
-	font-family: "Poppins", serif;
-	font-weight: 900;
-	font-style: italic;
-	font-size: 3.6rem;
-	color: #F11F8D;
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3.6rem;
+    color: #F11F8D;
 }
 
 @media (min-width: 768px) {
-	.reason__number {
-		font-family: "Poppins", serif;
-		font-weight: 900;
-		font-style: italic;
-		font-size: 4.2rem;
-		color: #F11F8D;
-	}
+    .reason__number {
+        font-family: "Poppins", serif;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 4.2rem;
+        color: #F11F8D;
+    }
 }
 
 .reason__paragraph-first {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	font-size: 2rem;
-	color: #333;
-	margin-bottom: .6rem;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: .6rem;
 }
 
 @media (min-width: 768px) {
-	.reason__paragraph-first {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		font-size: 2.4rem;
-		color: #333;
-		margin-bottom: 1.6rem;
-	}
+    .reason__paragraph-first {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        font-size: 2.4rem;
+        color: #333;
+        margin-bottom: 1.6rem;
+    }
 }
 
 .reason__paragraph-second {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	font-size: 2rem;
-	color: #333;
-	line-height: 1.4;
-	margin-top: .8rem;
-	margin-bottom: 1.1rem
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+    line-height: 1.4;
+    margin-top: .8rem;
+    margin-bottom: 1.1rem
 }
 
 @media (min-width: 768px) {
-	.reason__paragraph-second {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		font-size: 2.4rem;
-		color: #333;
-		line-height: 1.75;
-		margin-top: 0rem;
-		margin-bottom: 0rem
-	}
+    .reason__paragraph-second {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        font-size: 2.4rem;
+        color: #333;
+        line-height: 1.75;
+        margin-top: 0rem;
+        margin-bottom: 0rem
+    }
 }
 
 
 .reason__paragraph-third {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	font-size: 2rem;
-	color: #333;
-	line-height: 1.4;
-	margin-top: .8rem;
-	margin-bottom: 1.1rem
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+    line-height: 1.4;
+    margin-top: .8rem;
+    margin-bottom: 1.1rem
 }
 
 @media (min-width: 768px) {
-	.reason__paragraph-third {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		font-size: 2.4rem;
-		color: #333;
-		line-height: 1.75;
-		margin-top: 0rem;
-		margin-bottom: 1.6rem
-	}
+    .reason__paragraph-third {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        font-size: 2.4rem;
+        color: #333;
+        line-height: 1.75;
+        margin-top: 0rem;
+        margin-bottom: 1.6rem
+    }
 }
 
 .reason__text-first {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 400;
-	font-size: 1.6rem;
-	color: #333;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #333;
 }
 
 .reason__text-second {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 400;
-	font-size: 1.6rem;
-	color: #333;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #333;
 }
 
 @media (min-width: 768px) {
-	.reason__text-second {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 400;
-		font-size: 1.6rem;
-		color: #333;
-		margin-top: 1.3rem;
-	}
+    .reason__text-second {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: #333;
+        margin-top: 1.3rem;
+    }
 }
 
 .reason__text-third {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 400;
-	font-size: 1.6rem;
-	color: #333;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #333;
 }
 
 .reason__row-first>div>picture {
-	border-radius: .1rem;
+    border-radius: .1rem;
 }
 
 .reason__row-first>div>picture>img {
-	width: 100%;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
-	.reason__row-first>div>picture>img {
-		width: 100%;
-		padding-top: .6rem;
-	}
+    .reason__row-first>div>picture>img {
+        width: 100%;
+        padding-top: .6rem;
+    }
 }
 
 .reason__row-second>div>picture>img {
-	width: 100%;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
-	.reason__row-second>div>picture>img {
-		width: 100%;
-		padding-top: .6rem;
-	}
+    .reason__row-second>div>picture>img {
+        width: 100%;
+        padding-top: .6rem;
+    }
 }
 
 
 .reason__row-third>div>picture>img {
-	width: 100%;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
-	.reason__row-third>div>picture>img {
-		width: 100%;
-		padding-top: .6rem;
-	}
+    .reason__row-third>div>picture>img {
+        width: 100%;
+        padding-top: .6rem;
+    }
 }
 
 
 /*コース・目的
 ------------------------------------------ */
 .course-00 {
-	padding-top: 3.1rem;
-	margin-bottom: 6.5rem;
-	padding-top: 7.9rem;
-	margin-top: -5.0rem;
+    padding-top: 3.1rem;
+    margin-bottom: 6.5rem;
+    padding-top: 7.9rem;
+    margin-top: -5.0rem;
 }
 
 @media (min-width: 768px) {
-	.course-00 {
-		padding-top: 8.9rem;
-		padding-bottom: 0.8rem;
-		padding-right: 1.6rem;
-		padding-left: 1.6rem;
-	}
+    .course-00 {
+        padding-top: 8.9rem;
+        padding-bottom: 0.8rem;
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+    }
 }
 
 
 @media (min-width: 768px) {
-	.course__container {
-		margin-inline: auto;
-		max-width: 116rem;
-	}
+    .course__container {
+        margin-inline: auto;
+        max-width: 116rem;
+    }
 }
 
 .course__title {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	font-size: 2.8rem;
-	color: #333;
-	text-align: center;
-	margin-top: 2.9rem;
-	padding-bottom: 1.7rem;
-	margin-left: 1.6rem;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #333;
+    text-align: center;
+    margin-top: 2.9rem;
+    padding-bottom: 1.7rem;
+    margin-left: 1.6rem;
 }
 
 @media (min-width: 768px) {
-	.course__title {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		font-size: 3.6rem;
-		color: #333;
-		text-align: center;
-		margin-top: 2.9rem;
-		padding-bottom: 2.7rem;
-		margin-right: 1.6rem;
-	}
+    .course__title {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        font-size: 3.6rem;
+        color: #333;
+        text-align: center;
+        margin-top: 2.9rem;
+        padding-bottom: 2.7rem;
+        margin-right: 1.6rem;
+    }
 }
 
 .course__tab-content-item--link-text {
-	display: flex;
-	flex-direction: row;
-	justify-content: start;
-	column-gap: .8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    column-gap: .8rem;
 }
 
 
 @media (min-width: 768px) {
-	.course__tab-content-item--link-text {
-		display: flex;
-		flex-direction: row;
-		justify-content: start;
-		column-gap: 1.2rem;
-		width: fit-content;
-	}
+    .course__tab-content-item--link-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        column-gap: 1.2rem;
+        width: fit-content;
+        margin-top: 1.3rem;
+    }
 }
 
 .course__tab-content-item--link-text img {
-	width: 1.38rem;
-	height: 1.184rem;
+    width: 1.38rem;
+    height: 1.184rem;
 }
 
 @media (min-width: 768px) {
-	.course__tab-content-item--link-text img {
-		width: 1.847rem;
-		height: 1.584rem;
-	}
-}
-
-
-@media (min-width: 768px) {
-	.course__tab-content-item--link {
-		display: block;
-		width: 53.2rem;
-		overflow: hidden;
-		border-bottom-left-radius: 1rem;
-		border-bottom-right-radius: 1rem;
-		border-top-left-radius: 1rem;
-		border-top-right-radius: 1rem;
-	}
+    .course__tab-content-item--link-text img {
+        width: 1.847rem;
+        height: 1.584rem;
+    }
 }
 
 
 @media (min-width: 768px) {
-	.course__tab-content-item>a {
-		opacity: 1;
-	}
+    .course__tab-content-item--link {
+        display: block;
+        width: 53.2rem;
+        overflow: hidden;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .course__tab-content-item>a {
+        opacity: 1;
+    }
 }
 
 .course__tab-content-item--link-text img {
-	margin-top: 1.1rem;
+    margin-top: 1.1rem;
 }
 
 @media (min-width: 768px) {
-	.course__tab-content-item--link-text img {
-		margin-top: .7rem;
-	}
+    .course__tab-content-item--link-text img {
+        margin-top: 1rem;
+    }
 }
 
 .tab-content {
-	background-color: #F2F9FF;
+    background-color: #F2F9FF;
 }
 
 
 @media (min-width: 768px) {
-	.tab-content {
-		background-color: #F2F9FF;
-		border-bottom-left-radius: 1.2rem;
-		border-bottom-right-radius: 1.2rem;
-	}
+    .tab-content {
+        background-color: #F2F9FF;
+        border-bottom-left-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+    }
 }
 
 .course__tab-content-item--text-detail {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	font-size: 2rem;
-	color: #333;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
 }
 
 .course__tab-content-item--link img {
-	margin-bottom: 1rem;
-	width: 100%;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
-	.course__tab-content-item--link img {
-		width: 100%;
-		height: 100%;
-		margin-top: .5rem;
-		margin-bottom: 1.4rem;
-		object-fit: cover;
-		transition: transform .6s;
-	}
+    .course__tab-content-item--link img {
+        width: 100%;
+        height: 100%;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        object-fit: cover;
+        transition: transform .6s;
+    }
 }
 
 @media (min-width: 768px) {
-	.course__tab-content-item--link img:hover {
-		transform: scale(1.2);
-	}
+    .course__tab-content-item--link img:hover {
+        transform: scale(1.2);
+    }
 }
 
 
 .course__tab-content-item {
-	margin-bottom: 2.4rem;
+    margin-bottom: 2.4rem;
 }
 
 @media (min-width: 768px) {
-	.course__tab-content-item {
-		width: calc((100% - 32px) / 2);
-		margin-bottom: 0rem;
-	}
+    .course__tab-content-item {
+        width: calc((100% - 32px) / 2);
+        margin-bottom: 0rem;
+    }
 }
 
 @media (min-width: 768px) {
-	.course__tab-content-item>picture>img:hover {
-		transform: scale(1.2);
-	}
+    .course__tab-content-item>picture>img:hover {
+        transform: scale(1.2);
+    }
 }
 
 @media (min-width: 768px) {
-	.course__tab-content-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		column-gap: 3.1rem;
-		padding-left: 1.6rem;
-		padding-right: 1.6rem;
-		row-gap: 3.1rem;
-	}
+    .course__tab-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3.1rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        row-gap: 3.7rem;
+    }
 }
 
 
@@ -1198,85 +1201,85 @@ ul {
 /* タブナビゲーション */
 
 .st>.tab-content {
-	height: auto !important;
+    height: auto !important;
 }
 
 @media (min-width: 768px) {
-	.st>.tab-content {
-		overflow: visible;
-	}
+    .st>.tab-content {
+        overflow: visible;
+    }
 }
 
 .nav__text {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	font-size: 1.8rem;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {
-	.nav__text {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		font-size: 2.4rem;
-	}
+    .nav__text {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        font-size: 2.4rem;
+    }
 }
 
 .st-theme-basic {
-	border: none;
+    border: none;
 }
 
 .st>.tab-content>.tab-pane {
-	padding-left: 1.6rem;
-	padding-right: 1.6rem;
-	padding-top: 2.7rem;
-	padding-bottom: 2.7rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    padding-top: 3.2rem;
+    padding-bottom: 2.7rem;
 }
 
 .tab.st>.nav {
-	column-gap: 1.4rem;
-	flex-direction: row !important;
-	padding-left: 1.6rem;
-	padding-right: 1.6rem;
+    column-gap: 1.4rem;
+    flex-direction: row !important;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
 }
 
 @media (min-width: 768px) {
-	.tab.st>.nav {
-		flex-direction: row !important;
-		padding-left: 0rem;
-		padding-right: 0rem;
-		column-gap: 3.5rem
-	}
+    .tab.st>.nav {
+        flex-direction: row !important;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        column-gap: 3.5rem
+    }
 }
 
 .tab.st-theme-basic>.nav {
-	box-shadow: none;
+    box-shadow: none;
 }
 
 .tab.st-theme-basic>.nav .nav-link {
-	padding-top: 2.4rem;
-	padding-bottom: 2.4rem;
-	line-height: 1;
-	background-color: #F0F0F0;
-	color: #929292;
-	border-top-left-radius: 1.2rem;
-	border-top-right-radius: 1.2rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    line-height: 1;
+    background-color: #F0F0F0;
+    color: #929292;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
 }
 
 @media (min-width: 768px) {
-	.tab.st-theme-basic>.nav .nav-link {
-		padding-top: 2.4rem;
-		padding-bottom: 2.6rem;
-	}
+    .tab.st-theme-basic>.nav .nav-link {
+        padding-top: 2.4rem;
+        padding-bottom: 2.6rem;
+    }
 }
 
 /* アクティブ状態 */
 .tab.st-theme-basic>.nav .nav-link.active {
-	color: #333 !important;
-	background-color: #F2F9FF;
+    color: #333 !important;
+    background-color: #F2F9FF;
 }
 
 .tab.st-theme-basic>.nav .nav-link.active::after {
-	background-color: unset !important;
+    background-color: unset !important;
 }
 
 
@@ -1284,407 +1287,407 @@ ul {
 
 /* タブコンテンツ */
 .tab__content {
-	text-align: center;
-	background-color: #ffedcc;
-	border-radius: 0 0 1.25rem 1.25rem;
+    text-align: center;
+    background-color: #ffedcc;
+    border-radius: 0 0 1.25rem 1.25rem;
 }
 
 @media (min-width: 768px) {
-	.tab__content {
-		text-align: center;
-		background-color: #ffedcc;
-		border-radius: 0rem 0rem 1.25rem 1.25rem;
-	}
+    .tab__content {
+        text-align: center;
+        background-color: #ffedcc;
+        border-radius: 0rem 0rem 1.25rem 1.25rem;
+    }
 }
 
 /*費用
 ------------------------------------------ */
 .cost-zero {
-	padding-top: 3.2rem;
-	padding-top: 8.3rem;
-	margin-top: -5rem;
+    padding-top: 3.2rem;
+    padding-top: 8.3rem;
+    margin-top: -5rem;
 }
 
 .cost__container {
-	padding-right: 1.6rem;
-	padding-left: 1.6rem;
-	margin-bottom: 6.4rem;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+    margin-bottom: 6.4rem;
 }
 
 @media (min-width: 768px) {
-	.cost__container {
-		padding-right: 1.6rem;
-		padding-left: 1.6rem;
-		margin-bottom: 7.2rem;
-	}
+    .cost__container {
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+        margin-bottom: 7.2rem;
+    }
 }
 
 .cost__title {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	font-size: 2.8rem;
-	color: #333;
-	text-align: center;
-	margin-top: 2.6rem;
-	padding-bottom: 1.6rem;
-	margin-left: 1.6rem;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #333;
+    text-align: center;
+    margin-top: 2.6rem;
+    padding-bottom: 1.6rem;
+    margin-left: 1.6rem;
 }
 
 @media (min-width: 768px) {
-	.cost__title {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		font-size: 3.6rem;
-		color: #333;
-		text-align: center;
-		margin-top: 3.7rem;
-		padding-bottom: 2.6rem;
-		margin-left: 0rem;
-	}
+    .cost__title {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        font-size: 3.6rem;
+        color: #333;
+        text-align: center;
+        margin-top: 3.7rem;
+        padding-bottom: 2.6rem;
+        margin-left: 0rem;
+    }
 }
 
 .cost__table {
-	border: .3rem solid #ccc;
-	border-collapse: collapse;
+    border: .3rem solid #ccc;
+    border-collapse: collapse;
 }
 
 @media (min-width: 768px) {
-	.cost__table {
-		border: .3rem solid #ccc;
-		border-collapse: collapse;
-		margin-inline: auto;
-	}
+    .cost__table {
+        border: .3rem solid #ccc;
+        border-collapse: collapse;
+        margin-inline: auto;
+    }
 }
 
 th {
-	background-color: #F5F5F5;
+    background-color: #F5F5F5;
 }
 
 td {
-	border: .1rem solid #ccc;
+    border: .1rem solid #ccc;
 }
 
 .cost__table--head-quantity {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 400;
-	font-size: 1.6rem;
-	color: #333;
-	width: 24%;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #333;
+    width: 24%;
 }
 
 @media (min-width: 768px) {
-	.cost__table--head-quantity {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 400;
-		font-size: 1.8rem;
-		color: #333;
-		width: 12.3%;
-	}
+    .cost__table--head-quantity {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: #333;
+        width: 12.3%;
+    }
 }
 
 .cost__table--head-price {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 400;
-	font-size: 1.6rem;
-	color: #333;
-	width: 45%;
-	height: 6.6rem;
-	padding-right: 1.4rem;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #333;
+    width: 45%;
+    height: 6.6rem;
+    padding-right: 1.4rem;
 }
 
 @media (min-width: 768px) {
-	.cost__table--head-price {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 400;
-		font-size: 1.8rem;
-		color: #333;
-		width: 39%;
-		height: 7.6rem;
-		padding-right: 0rem;
-	}
+    .cost__table--head-price {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: #333;
+        width: 39%;
+        height: 7.6rem;
+        padding-right: 0rem;
+    }
 }
 
 .cost__table--quantity {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 400;
-	font-size: 1.6rem;
-	color: #333;
-	text-align: center;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #333;
+    text-align: center;
 }
 
 
 @media (min-width: 768px) {
-	.cost__table--quantity {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 400;
-		font-size: 1.8rem;
-		color: #333;
-		text-align: center;
-	}
+    .cost__table--quantity {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: #333;
+        text-align: center;
+    }
 }
 
 .cost__table--price {
-	font-family: "Poppins", serif;
-	font-weight: 700;
-	font-size: 2.8rem;
-	color: #F23397;
-	height: 6.34rem;
-	padding-left: 5.2rem;
-	padding-top: .6rem;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #F23397;
+    height: 6.34rem;
+    padding-left: 5.2rem;
+    padding-top: .6rem;
 }
 
 @media (min-width: 768px) {
-	.cost__table--price {
-		font-family: "Poppins", serif;
-		font-weight: 700;
-		font-size: 3.2rem;
-		color: #F23397;
-		height: 7.71rem;
-		padding-left: 0rem;
-		padding-top: 1.3rem;
-		text-align: center
-	}
+    .cost__table--price {
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-size: 3.2rem;
+        color: #F23397;
+        height: 7.71rem;
+        padding-left: 0rem;
+        padding-top: 1.3rem;
+        text-align: center
+    }
 }
 
 .cost__table--price-01 {
-	font-family: "Poppins", serif;
-	font-weight: 700;
-	font-size: 2.8rem;
-	color: #F23397;
-	height: 6.3rem;
-	padding-left: 4.7rem;
-	padding-top: .6rem;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #F23397;
+    height: 6.3rem;
+    padding-left: 4.7rem;
+    padding-top: .6rem;
 }
 
 @media (min-width: 768px) {
-	.cost__table--price-01 {
-		font-family: "Poppins", serif;
-		font-weight: 700;
-		font-size: 3.2rem;
-		color: #F23397;
-		height: 7.9rem;
-		padding-left: 0rem;
-		padding-top: 1.3rem;
-		text-align: center
-	}
+    .cost__table--price-01 {
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-size: 3.2rem;
+        color: #F23397;
+        height: 7.9rem;
+        padding-left: 0rem;
+        padding-top: 1.3rem;
+        text-align: center
+    }
 }
 
 .cost__table--price-02 {
-	font-family: "Poppins", serif;
-	font-weight: 700;
-	font-size: 2.8rem;
-	color: #F23397;
-	height: 6.1rem;
-	padding-left: 6.2rem;
-	padding-top: .6rem;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #F23397;
+    height: 6.1rem;
+    padding-left: 6.2rem;
+    padding-top: .6rem;
 }
 
 @media (min-width: 768px) {
-	.cost__table--price-02 {
-		font-family: "Poppins", serif;
-		font-weight: 700;
-		font-size: 3.2rem;
-		color: #F23397;
-		height: 7.4rem;
-		padding-left: 0rem;
-		padding-top: 1.3rem;
-		text-align: center
-	}
+    .cost__table--price-02 {
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-size: 3.2rem;
+        color: #F23397;
+        height: 7.4rem;
+        padding-left: 0rem;
+        padding-top: 1.3rem;
+        text-align: center
+    }
 }
 
 .cost__table--price-unit {
-	font-family: "Noto Sans JP", serif;
-	font-weight: 500;
-	font-size: 1.6rem;
-	color: #F23397;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #F23397;
 }
 
 @media (min-width: 768px) {
-	.cost__table--price-unit {
-		font-family: "Noto Sans JP", serif;
-		font-weight: 500;
-		font-size: 1.8rem;
-		color: #F23397;
-	}
+    .cost__table--price-unit {
+        font-family: "Noto Sans JP", serif;
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: #F23397;
+    }
 }
 
 /*よくあるご質問、教室検索
 ------------------------------------------ */
 
 .question-link {
-	position: relative;
-	display: block;
+    position: relative;
+    display: block;
 }
 
 @media (min-width: 768px) {
-	.question-link {
-		position: relative;
-		width: 50%;
-		overflow: hidden;
-	}
+    .question-link {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+    }
 }
 
 .footer-link__image {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 
 @media (min-width: 768px) {
-	.footer-link__image {
-		object-fit: cover;
-		transition: transform .6s;
-		opacity: 1;
-		height: 100%;
-	}
+    .footer-link__image {
+        object-fit: cover;
+        transition: transform .6s;
+        opacity: 1;
+        height: 100%;
+    }
 }
 
 @media (min-width: 768px) {
-	.footer-link__image:hover {
-		transform: scale(1.2);
-	}
+    .footer-link__image:hover {
+        transform: scale(1.2);
+    }
 }
 
 @media (min-width: 768px) {
-	.footer-link__image img:hover {
-		transform: scale(1.2);
-	}
+    .footer-link__image img:hover {
+        transform: scale(1.2);
+    }
 }
 
 .question-link {
-	display: block;
+    display: block;
 }
 
 @media (min-width: 768px) {
-	.question-link {
-		opacity: 1;
-	}
+    .question-link {
+        opacity: 1;
+    }
 }
 
 
 .question__text {
-	position: absolute;
-	bottom: 39.1%;
-	left: 4.3%;
-	color: #fff;
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	font-size: 2.2rem;
+    position: absolute;
+    bottom: 39.1%;
+    left: 4.3%;
+    color: #fff;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    font-size: 2.2rem;
 }
 
 @media (min-width: 768px) {
-	.question__text {
-		position: absolute;
-		top: 48%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		color: #fff;
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		font-size: 3.2rem;
-	}
+    .question__text {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        font-size: 3.2rem;
+    }
 }
 
 @media (min-width: 768px) {
-	.question__container {
-		display: flex;
-		flex-direction: row;
-	}
+    .question__container {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .search-link {
-	position: relative;
-	display: block;
+    position: relative;
+    display: block;
 }
 
 @media (min-width: 768px) {
-	.search-link {
-		position: relative;
-		width: 50%;
-		overflow: hidden;
-	}
+    .search-link {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+    }
 }
 
 .footer-link__image {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 
 @media (min-width: 768px) {
-	.footer-link__image {
-		object-fit: cover;
-		transition: transform .6s;
-		opacity: 1;
-		height: 100%;
-	}
+    .footer-link__image {
+        object-fit: cover;
+        transition: transform .6s;
+        opacity: 1;
+        height: 100%;
+    }
 }
 
 @media (min-width: 768px) {
-	.question-link {
-		opacity: 1;
-	}
+    .question-link {
+        opacity: 1;
+    }
 }
 
 
 .search__text {
-	position: absolute;
-	bottom: 39.1%;
-	left: 4.3%;
-	color: #fff;
-	font-family: "Noto Sans JP", serif;
-	font-weight: 700;
-	font-size: 2.2rem;
+    position: absolute;
+    bottom: 39.1%;
+    left: 4.3%;
+    color: #fff;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    font-size: 2.2rem;
 }
 
 @media (min-width: 768px) {
-	.search__text {
-		position: absolute;
-		top: 48%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		color: #fff;
-		font-family: "Noto Sans JP", serif;
-		font-weight: 700;
-		font-size: 3.2rem;
-	}
+    .search__text {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-family: "Noto Sans JP", serif;
+        font-weight: 700;
+        font-size: 3.2rem;
+    }
 }
 
 /*フッター
 ------------------------------------------ */
 .footer {
-	padding-top: 3.1rem;
-	text-align: center;
-	padding-left: 1.5rem;
-	background-color: #ddd;
-	padding-bottom: 2.7rem;
+    padding-top: 3.1rem;
+    text-align: center;
+    padding-left: 1.5rem;
+    background-color: #ddd;
+    padding-bottom: 2.7rem;
 }
 
 @media (min-width: 768px) {
-	.footer {
-		padding-top: 5.1rem;
-		text-align: center;
-		padding-left: 0rem;
-		background-color: #ddd;
-		padding-bottom: 4.6rem;
-	}
+    .footer {
+        padding-top: 5.1rem;
+        text-align: center;
+        padding-left: 0rem;
+        background-color: #ddd;
+        padding-bottom: 4.6rem;
+    }
 }
 
 .footer__copyright {
-	font-family: "Poppins", serif;
-	font-weight: 400;
-	font-size: 1.3rem;
-	color: #333;
-	text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
 
 }
 
 @media (min-width: 768px) {
-	.footer__copyright {
-		font-family: "Poppins", serif;
-		font-weight: 400;
-		font-size: 1.3rem;
-		color: #333;
-		text-align: center;
-	}
+    .footer__copyright {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: #333;
+        text-align: center;
+    }
 }
