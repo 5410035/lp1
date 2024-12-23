@@ -39,7 +39,7 @@
                     <a href="/" class="header__logo-link">
                         <picture>
                             <source media="(min-width: 768px)" srcset="/assets/image/header_logo_pc.svg">
-                            <img src="/assets/image/header_logo_sp.svg" alt="Kira-Kira Juku">
+                            <img src="/assets/image/header_logo_sp.svg" alt="Kira-Kira Juku" class="header__logo-link--img">
                         </picture>
                     </a>
                 </div>
@@ -103,25 +103,25 @@
                 </div>
             </div>
 
-            <div class="button__wrapper">
-                <a href="/inquiry" class="button-77CB33">入学のお問い合わせ</a>
-                <a href="/freetrial" class="button-F6AA00">無料体験に申し込む</a>
-                <a href="/request" class="button-3AC8AD">資料請求する</a>
-            </div>
+            <ul class="button__wrapper">
+                <li><a href="/inquiry" class="button-yellow">入学のお問い合わせ</a></li>
+                <li><a href="/freetrial" class="button-orange">無料体験に申し込む</a></li>
+                <li><a href="/request" class="button-green ">資料請求する</a></li>
+            </ul>
 
             <!-- 選ばれる3つの理由 -->
-            <section id="reason" class="reason_zero">
+            <section id="reason" class="reason">
                 <div class="reason__container">
                     <h2 class="reason__title-first">選ばれる<span class="reason__title-second">3</span>つの理由</h2>
                     <!-- 1個目 -->
                     <div class="reason__row-first reason__row">
-                        <div>
+                        <div class="reason__row-first--picture">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/reason_main_pc_01.jpg">
-                                <img src="/assets/image/reason_main_sp_01.jpg" alt="">
+                                <img class="reason__row-first--img" src="/assets/image/reason_main_sp_01.jpg" alt="">
                             </picture>
                         </div>
-                        <div>
+                        <div class="reason__row-first--picture">
                             <div class="reason__point">Point<span class="reason__space"> </span><span class="reason__number">1</span></div>
                             <div class="reason__paragraph-first">実績のある講師陣だから安心</div>
                             <p class="reason__text-first">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -129,13 +129,13 @@
                     </div>
                     <!-- 2個目 -->
                     <div class="reason__row-second reason__row">
-                        <div>
+                        <div class="reason__row-second--picture">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/reason_main_pc_02.jpg">
-                                <img src="/assets/image/reason_main_sp_02.jpg" alt="">
+                                <img class="reason__row-second--img" src="/assets/image/reason_main_sp_02.jpg" alt="">
                             </picture>
                         </div>
-                        <div>
+                        <div class="reason__row-second--picture">
                             <div class="reason__point">Point<span class="reason__space"> </span><span class="reason__number">2</span></div>
                             <div class="reason__paragraph-second">オンラインにも対応だから、早送り巻き戻し視聴できる。</div>
                             <p class="reason__text-second">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -143,13 +143,13 @@
                     </div>
                     <!-- 3個目 -->
                     <div class="reason__row-third reason__row">
-                        <div>
+                        <div class="reason__row-third--picture">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/reason_main_pc_03.jpg">
-                                <img src="/assets/image/reason_main_sp_03.jpg" alt="">
+                                <img class="reason__row-third--img" src="/assets/image/reason_main_sp_03.jpg" alt="">
                             </picture>
                         </div>
-                        <div>
+                        <div class="reason__row-third--picture">
                             <div class="reason__point">Point<span class="reason__space"> </span><span class="reason__number">3</span></div>
                             <div class="reason__paragraph-third">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</div>
                             <p class="reason__text-third">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -169,7 +169,7 @@
             </div>
 
             <!-- コース・目的 -->
-            <section id="course" class="course-00">
+            <section id="course" class="course">
                 <div class="course__container">
                     <h2 class="course__title">コース・目的</h2>
                     <!-- タブナビゲーション -->
@@ -340,7 +340,7 @@
             </section>
 
             <!-- 入学説明会に申し込むボタン -->
-            <div class="apply__button">
+            <div class="apply__button apply__button-second">
                 <div class="apply__container">
                     <div>
                         <p class="apply__text">入学ご検討の方は、まずは入学説明会にお越しください</p>
@@ -350,7 +350,7 @@
             </div>
 
             <!-- 費用 -->
-            <section id="cost" class="cost-zero">
+            <section id="cost" class="cost">
                 <h2 class="cost__title">費 用</h2>
                 <div class="cost__container">
                     <table class="cost__table">
