@@ -8,7 +8,7 @@ $(window).on('resize', function () {
 });
 
 $('.header-nav__item-link').on('click', function () {
-    hamburger.toggleClass('hamburger-menu_active');
+    hamburger.removeClass('hamburger-menu_active');
 });
 
 // タブ

@@ -3,6 +3,7 @@
 html {
     font-size: calc(10 * 100vw / 375);
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 @media (min-width:768px) {
@@ -140,7 +141,7 @@ ul {
     background-color: #fff;
 }
 
-.header__logo-link>img {
+.header__logo-link--img {
     width: 100%;
 }
 
@@ -318,13 +319,13 @@ ul {
     }
 }
 
-.badge>img {
+.badge__frame-image {
     width: 2.4rem;
     height: auto;
 }
 
 @media (min-width: 768px) {
-    .badge>img {
+    .badge__frame-image {
         width: 5.3rem;
         height: auto;
         margin-left: .3rem;
@@ -453,7 +454,7 @@ ul {
 /* ボタン
 ------------------------------------------ */
 
-.button-77CB33 {
+.button-yellow {
     display: block;
     border-radius: 2.4rem;
     width: 24.9rem;
@@ -472,7 +473,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .button-77CB33 {
+    .button-yellow {
         display: block;
         border-radius: 3.4rem;
         width: 33.9rem;
@@ -492,7 +493,7 @@ ul {
 }
 
 
-.button-F6AA00 {
+.button-orange {
     display: block;
     border-radius: 2.4rem;
     width: 24.9rem;
@@ -511,7 +512,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .button-F6AA00 {
+    .button-orange {
         display: block;
         border-radius: 3.4rem;
         width: 33.9rem;
@@ -531,7 +532,7 @@ ul {
 }
 
 
-.button-3AC8AD {
+.button-green {
     display: block;
     border-radius: 2.4rem;
     width: 24.9rem;
@@ -549,7 +550,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .button-3AC8AD {
+    .button-green {
         display: block;
         border-radius: 3.4rem;
         width: 33.9rem;
@@ -626,8 +627,14 @@ ul {
         background-color: #FFEDED;
         padding-right: 3.6rem;
         padding-left: 3.6rem;
-        padding-top: 5.3rem;
+        padding-top: 5.4rem;
         padding-bottom: 4.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .apply__button-second {
+        padding-top: 5.4rem;
     }
 }
 
@@ -639,7 +646,7 @@ ul {
     font-weight: 400;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: .9rem;
+    margin-bottom: .96rem;
 }
 
 @media (min-width: 768px) {
@@ -663,7 +670,7 @@ ul {
     background: linear-gradient(to right, #0573E1, #53A2F0);
     text-align: center;
     position: relative;
-    padding-top: 1.6rem;
+    padding-top: 1.7rem;
     font-size: 2rem;
     color: #fff;
     font-family: "Noto Sans JP", serif;
@@ -697,17 +704,15 @@ ul {
 /*選ばれる３つの理由
 ------------------------------------------ */
 
-.reason_zero {
+.reason {
     display: block;
-    padding-top: 50px;
-    margin-top: -50px;
 }
 
 .reason__container {
     padding-right: 1.6rem;
     padding-left: 1.6rem;
     padding-top: 2.8rem;
-    margin-bottom: 3.4rem;
+    margin-bottom: 3.3rem;
 }
 
 
@@ -728,14 +733,14 @@ ul {
     .reason__row-first {
         display: flex;
         flex-direction: row;
-        margin-bottom: 4.4rem;
+        margin-bottom: 4.8rem;
         justify-content: center;
         column-gap: 4rem;
     }
 }
 
 @media (min-width: 768px) {
-    .reason__row-first>div {
+    .reason__row-first--picture {
         max-width: 560px;
         width: calc((100% - 40px) / 2);
     }
@@ -747,7 +752,7 @@ ul {
 
 
 @media (min-width: 768px) {
-    .reason__row-second>div {
+    .reason__row-second--picture {
         max-width: 560px;
         width: calc((100% - 40px) / 2);
     }
@@ -758,7 +763,7 @@ ul {
     .reason__row-second {
         display: flex;
         flex-direction: row-reverse;
-        margin-bottom: 4rem;
+        margin-bottom: 4.7rem;
         justify-content: center;
         column-gap: 4rem;
     }
@@ -768,7 +773,7 @@ ul {
     .reason__row-third {
         display: flex;
         flex-direction: row;
-        margin-bottom: 7.4rem;
+        margin-bottom: 7.2rem;
         justify-content: center;
         column-gap: 4rem;
     }
@@ -776,7 +781,7 @@ ul {
 
 
 @media (min-width: 768px) {
-    .reason__row-third>div {
+    .reason__row-third--picture {
         max-width: 560px;
         width: calc((100% - 40px) / 2);
     }
@@ -799,7 +804,7 @@ ul {
         font-size: 3.6rem;
         color: #333;
         text-align: center;
-        padding-bottom: 2.9rem;
+        padding-bottom: 3.7rem;
     }
 }
 
@@ -840,8 +845,8 @@ ul {
         font-size: 2.8rem;
         color: #F11F8D;
         line-height: 1;
-        margin-top: 1.6rem;
-        margin-bottom: .4rem;
+        margin-top: .7rem;
+        margin-bottom: .7rem;
     }
 }
 
@@ -895,7 +900,7 @@ ul {
         font-weight: 700;
         font-size: 2.4rem;
         color: #333;
-        margin-bottom: 1.6rem;
+        margin-bottom: 1.4rem;
     }
 }
 
@@ -975,58 +980,50 @@ ul {
     color: #333;
 }
 
-.reason__row-first>div>picture {
+.reason__row-first--img {
     border-radius: .1rem;
-}
-
-.reason__row-first>div>picture>img {
     width: 100%;
 }
 
 @media (min-width: 768px) {
-    .reason__row-first>div>picture>img {
+    .reason__row-first--img {
         width: 100%;
-        padding-top: .6rem;
     }
 }
 
-.reason__row-second>div>picture>img {
+.reason__row-second--img {
     width: 100%;
 }
 
 @media (min-width: 768px) {
-    .reason__row-second>div>picture>img {
+    .reason__row-second--img {
         width: 100%;
-        padding-top: .6rem;
     }
 }
 
 
-.reason__row-third>div>picture>img {
+.reason__row-third--img {
     width: 100%;
 }
 
 @media (min-width: 768px) {
-    .reason__row-third>div>picture>img {
+    .reason__row-third--img {
         width: 100%;
-        padding-top: .6rem;
     }
 }
 
 
 /*コース・目的
 ------------------------------------------ */
-.course-00 {
+.course {
     padding-top: 3.1rem;
-    margin-bottom: 6.5rem;
-    padding-top: 7.9rem;
-    margin-top: -5.0rem;
+    margin-bottom: 6.3rem;
 }
 
 @media (min-width: 768px) {
-    .course-00 {
-        padding-top: 8.9rem;
-        padding-bottom: 0.8rem;
+    .course {
+        padding-top: 3.8rem;
+        padding-bottom: 0.7rem;
         padding-right: 1.6rem;
         padding-left: 1.6rem;
     }
@@ -1112,6 +1109,7 @@ ul {
 @media (min-width: 768px) {
     .course__tab-content-item>a {
         opacity: 1;
+        border-radius: 1.2rem;
     }
 }
 
@@ -1231,8 +1229,17 @@ ul {
 .st>.tab-content>.tab-pane {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
-    padding-top: 3.2rem;
+    padding-top: 2.6rem;
     padding-bottom: 2.7rem;
+}
+
+@media (min-width: 768px) {
+    .st>.tab-content>.tab-pane {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        padding-top: 3.1rem;
+        padding-bottom: 3rem;
+    }
 }
 
 .tab.st>.nav {
@@ -1302,10 +1309,8 @@ ul {
 
 /*費用
 ------------------------------------------ */
-.cost-zero {
+.cost {
     padding-top: 3.2rem;
-    padding-top: 8.3rem;
-    margin-top: -5rem;
 }
 
 .cost__container {
@@ -1413,6 +1418,8 @@ td {
     font-size: 1.6rem;
     color: #333;
     text-align: center;
+    padding-top: .4rem;
+    padding-left: .3rem;
 }
 
 
@@ -1423,6 +1430,7 @@ td {
         font-size: 1.8rem;
         color: #333;
         text-align: center;
+        padding-top: .1rem;
     }
 }
 
@@ -1433,7 +1441,7 @@ td {
     color: #F23397;
     height: 6.34rem;
     padding-left: 5.2rem;
-    padding-top: .6rem;
+    padding-top: .8rem;
 }
 
 @media (min-width: 768px) {
@@ -1444,7 +1452,7 @@ td {
         color: #F23397;
         height: 7.71rem;
         padding-left: 0rem;
-        padding-top: 1.3rem;
+        padding-top: 1.1rem;
         text-align: center
     }
 }
@@ -1455,8 +1463,8 @@ td {
     font-size: 2.8rem;
     color: #F23397;
     height: 6.3rem;
-    padding-left: 4.7rem;
-    padding-top: .6rem;
+    padding-left: 4.9rem;
+    padding-top: .8rem;
 }
 
 @media (min-width: 768px) {
@@ -1465,9 +1473,9 @@ td {
         font-weight: 700;
         font-size: 3.2rem;
         color: #F23397;
-        height: 7.9rem;
+        height: 7.8rem;
         padding-left: 0rem;
-        padding-top: 1.3rem;
+        padding-top: 1.2rem;
         text-align: center
     }
 }
@@ -1479,7 +1487,7 @@ td {
     color: #F23397;
     height: 6.1rem;
     padding-left: 6.2rem;
-    padding-top: .6rem;
+    padding-top: .8rem;
 }
 
 @media (min-width: 768px) {
@@ -1490,7 +1498,7 @@ td {
         color: #F23397;
         height: 7.4rem;
         padding-left: 0rem;
-        padding-top: 1.3rem;
+        padding-top: 1rem;
         text-align: center
     }
 }
@@ -1656,20 +1664,20 @@ td {
 /*フッター
 ------------------------------------------ */
 .footer {
-    padding-top: 3.1rem;
+    padding-top: 3rem;
     text-align: center;
     padding-left: 1.5rem;
     background-color: #ddd;
-    padding-bottom: 2.7rem;
+    padding-bottom: 2.9rem;
 }
 
 @media (min-width: 768px) {
     .footer {
-        padding-top: 5.1rem;
+        padding-top: 4.7rem;
         text-align: center;
         padding-left: 0rem;
         background-color: #ddd;
-        padding-bottom: 4.6rem;
+        padding-bottom: 4.8rem;
     }
 }
 
