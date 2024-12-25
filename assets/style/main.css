@@ -1377,7 +1377,7 @@ td {
     font-weight: 400;
     font-size: 1.6rem;
     color: #333;
-    width: 24%;
+    width: 24.3%;
 }
 
 @media (min-width: 768px) {
@@ -1440,8 +1440,10 @@ td {
     font-size: 2.8rem;
     color: #F23397;
     height: 6.34rem;
-    padding-left: 5.2rem;
-    padding-top: .8rem;
+    text-align: center;
+    padding-right: .4rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
 }
 
 @media (min-width: 768px) {
@@ -1600,6 +1602,7 @@ td {
     .question__container {
         display: flex;
         flex-direction: row;
+        height: 32rem;
     }
 }
 
