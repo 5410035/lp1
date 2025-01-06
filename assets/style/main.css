@@ -454,7 +454,7 @@ ul {
 /* ボタン
 ------------------------------------------ */
 
-.button-yellow {
+.button__yellow {
     display: block;
     border-radius: 2.4rem;
     width: 24.9rem;
@@ -473,7 +473,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .button-yellow {
+    .button__yellow {
         display: block;
         border-radius: 3.4rem;
         width: 33.9rem;
@@ -493,7 +493,7 @@ ul {
 }
 
 
-.button-orange {
+.button__orange {
     display: block;
     border-radius: 2.4rem;
     width: 24.9rem;
@@ -512,7 +512,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .button-orange {
+    .button__orange {
         display: block;
         border-radius: 3.4rem;
         width: 33.9rem;
@@ -532,7 +532,7 @@ ul {
 }
 
 
-.button-green {
+.button__green {
     display: block;
     border-radius: 2.4rem;
     width: 24.9rem;
@@ -550,7 +550,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .button-green {
+    .button__green {
         display: block;
         border-radius: 3.4rem;
         width: 33.9rem;
@@ -582,7 +582,7 @@ ul {
 
 
 /*ハンバーガーメニュー入学説明会に申し込むボタン*/
-.button-session {
+.button__session {
     color: #005BAC;
     background-color: #fff;
     font-size: 1.8rem;
@@ -597,7 +597,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .button-session {
+    .button__session {
         color: #fff;
         background: linear-gradient(to right, #0573E1, #53A2F0);
         font-size: 2rem;
@@ -693,13 +693,63 @@ ul {
         color: #fff;
         font-family: "Noto Sans JP", serif;
         font-weight: 700;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
         margin-bottom: 1.2rem;
         padding-left: 2.3rem;
     }
 }
 
+.apply__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .apply__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 3.1rem;
+    }
+}
+
+.button__orange-cta {
+    display: block;
+    border-radius: 3.45rem;
+    width: 30.4rem;
+    height: 6.9rem;
+    text-align: center;
+    position: relative;
+    padding-top: 1.7rem;
+    font-size: 2rem;
+    color: #fff;
+    font-family: "Noto Sans JP", serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 768px) {
+    .button__orange-cta {
+        display: block;
+        border-radius: 3.75rem;
+        width: 35.9rem;
+        height: 7.5rem;
+        text-align: center;
+        position: relative;
+        padding-top: 1.6rem;
+        font-size: 2.4rem;
+        color: #fff;
+        font-weight: 700;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1.2rem;
+        padding-left: 2.3rem;
+    }
+}
 
 /*選ばれる３つの理由
 ------------------------------------------ */
