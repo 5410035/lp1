@@ -396,6 +396,7 @@ ul {
 }
 
 .catch__text-first {
+    display: block;
     font-family: "Noto Sans JP", serif;
     font-weight: 400;
     font-size: 1.4rem;
@@ -414,6 +415,7 @@ ul {
 }
 
 .catch__text-second {
+    display: block;
     font-family: "Noto Sans JP", serif;
     font-weight: 900;
     font-size: 2.5rem;
@@ -434,6 +436,7 @@ ul {
 }
 
 .catch__text-third {
+    display: block;
     font-family: "Noto Sans JP", serif;
     font-weight: 900;
     font-size: 2.5rem;
